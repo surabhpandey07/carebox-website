@@ -1,0 +1,30 @@
+.footer {
+    position: relative;
+    width: 100%;
+    background-color: #0a50b2;
+    color: #cbcfd6;
+    padding: 40px 0;
+}
+
+.frame-container {
+    display: flex;
+    flex-direction: row;
+    gap: 82px;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.useful-links {
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+    .frame-container {
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 20px;
+    }
+}

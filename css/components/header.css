@@ -1,0 +1,47 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 90px;
+    z-index: 1000;
+}
+
+.list {
+    position: absolute;
+    width: calc(100% - 1320px);
+    top: 32px;
+    right: 177px;
+    left: 1143px;
+    height: 26px;
+    text-align: right;
+    font-family: Inter;
+}
+
+.logopng-icon {
+    position: absolute;
+    top: 18px;
+    left: 105px;
+    width: 126px;
+    height: 55px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        height: 70px;
+    }
+    
+    .list {
+        display: none;
+    }
+    
+    .logopng-icon {
+        width: 100px;
+        height: 45px;
+        left: 20px;
+    }
+}

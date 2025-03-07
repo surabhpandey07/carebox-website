@@ -1,0 +1,23 @@
+.form {
+    position: relative;
+    height: 50px;
+    font-size: 12px;
+    color: #777;
+}
+
+.label-input {
+    position: relative;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #cec6ef;
+    width: 371px;
+    height: 50px;
+    overflow: hidden;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+    .label-input {
+        width: 100%;
+    }
+}
