@@ -523,16 +523,100 @@ body {
     gap: 52px;
     font-size: 18px;
     color: #202122;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
 }
+
 .navbar {
-    position: absolute;
-    top: 0px;
-    left: calc(50% - 720px);
-    background-color: #fff;
-    width: 1440px;
+    position: fixed; /* Change from absolute to fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 90px;
-    font-size: 14px;
-    color: #666;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+/* Update logo styles */
+.logopng-icon {
+    width: 126px;
+    height: 55px;
+    object-fit: contain;
+}
+
+/* Update navigation menu styles */
+.home-parent {
+    display: flex;
+    align-items: center;
+    gap: 52px;
+    margin: 0;
+    padding: 0;
+}
+
+.home1, .about-us, .product-solutions, .contact-us {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    color: #202122;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.home1 a, .about-us a, .product-solutions a, .contact-us a {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 0;
+    display: block;
+}
+
+/* Active/hover states */
+.home1:hover a, .about-us:hover a, 
+.product-solutions:hover a, .contact-us:hover a {
+    color: #5ce192;
+}
+
+/* Sign in button styles */
+.link {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-left: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .home-parent {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+    .home-parent {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        
+        display: flex;
+    }
+
+    .link {
+        display: none;
+    }
 }
 .features {
     color: #0048ae;
@@ -2191,28 +2275,33 @@ body {
     height: 21px;
     cursor: pointer;
     z-index: 1000;
+    padding: 0;
+    background: none;
+    border: none;
 }
 
 .mobile-menu-btn span {
     display: block;
     width: 100%;
     height: 3px;
-    background-color: #000;
+    background-color: #202122;
     transition: all 0.3s ease;
+    border-radius: 3px;
 }
 
 /* Mobile Navigation */
 .mobile-nav {
     display: none;
     position: fixed;
-    top: 0;
+    top: 90px; /* Height of navbar */
     left: -100%;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 90px);
     background-color: #fff;
-    padding: 80px 20px 20px;
+    padding: 20px;
     transition: all 0.3s ease;
     z-index: 999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .mobile-nav.active {
@@ -2222,34 +2311,38 @@ body {
 .mobile-nav-items {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 
 .mobile-nav-item {
+    text-decoration: none;
+    color: #202122;
     font-size: 18px;
     font-weight: 500;
-    color: #000;
-    padding: 10px 0;
+    padding: 15px;
     border-bottom: 1px solid #eee;
+    transition: color 0.3s ease;
 }
 
-/* Update existing media queries */
+.mobile-nav-item:hover {
+    color: #5ce192;
+}
+
+.menu-open {
+    overflow: hidden;
+}
+
 @media screen and (max-width: 768px) {
     .mobile-menu-btn {
         display: flex;
-    }
-
-    .home-parent {
-        display: none;
     }
 
     .mobile-nav {
         display: block;
     }
 
-    /* When menu is open */
     .mobile-menu-btn.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 6px);
+        transform: rotate(45deg) translate(6px, 6px);
     }
 
     .mobile-menu-btn.active span:nth-child(2) {
@@ -2257,37 +2350,6 @@ body {
     }
 
     .mobile-menu-btn.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -6px);
-    }
-}
-
-/* Add these styles for navigation links */
-.home-parent a {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.3s ease;
-}
-
-.home-parent a:hover {
-    color: #007bff; /* Or your preferred hover color */
-}
-
-/* Update existing classes */
-.home1, .about-us, .product-solutions, .contact-us {
-    cursor: pointer;
-}
-
-/* Mobile menu links */
-@media screen and (max-width: 768px) {
-    .mobile-nav-items a {
-        text-decoration: none;
-        color: inherit;
-        display: block;
-        padding: 10px 15px;
-        transition: background-color 0.3s ease;
-    }
-
-    .mobile-nav-items a:hover {
-        background-color: #f5f5f5;
+        transform: rotate(-45deg) translate(6px, -6px);
     }
 }
