@@ -2,8 +2,9 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="initial-scale=1, width=device-width">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 		
 		<!-- CSS Files -->
 		<link rel="stylesheet" href="/css/pagescss/home.css">
@@ -86,6 +87,27 @@
         				</div>
       			</div>
     		</div>
+			<div class="navbar">
+				<!-- Add this hamburger menu button -->
+				<div class="mobile-menu-btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				
+				<!-- ...existing navbar code... -->
+				
+				<!-- Add this mobile menu -->
+				<div class="mobile-nav">
+					<div class="mobile-nav-items">
+						<div class="mobile-nav-item">Home</div>
+						<div class="mobile-nav-item">About Us</div>
+						<div class="mobile-nav-item">Product & Solutions</div>
+						<div class="mobile-nav-item">Careers</div>
+						<div class="mobile-nav-item">Contact Us</div>
+					</div>
+				</div>
+			</div>
     		<div class="navbar">
       			<div class="list">
         				<div class="item-link">
@@ -115,12 +137,15 @@
           					</span>
         				</div>
       			</div>
-      			<div class="home-parent">
-        				<div class="home1">Home</div>
-        				<div class="about-us">About Us</div>
-        				<div class="product-solutions">Product & Solutions</div>
-        				<div class="product-solutions">Careers</div>
-        				<div class="contact-us">Contact Us</div>
+       			<div class="home-parent">
+        				<!-- Replace the existing navigation items with these linked versions -->
+                        <div class="home-parent">
+                        <div class="home1"><a href="index.html">Home</a></div>
+                        <div class="about-us"><a href="/pages/about.html">About Us</a></div>
+                        <div class="product-solutions"><a href="products.html">Product & Solutions</a></div>
+                        <div class="product-solutions"><a href="careers.html">Careers</a></div>
+                        <div class="contact-us"><a href="/pages/contact.html">Contact Us</a></div>
+                        </div>
       			</div>
     		</div>
     		<div class="frame-container">
@@ -729,11 +754,6 @@
       			<img class="svg-icon2" alt="" src="assets/images/SVG.png">
       			
     		</div>
-  	</div>
-  	
-  	
-  	
-
-  	
+  	</div> 	
 </body>
 </html>

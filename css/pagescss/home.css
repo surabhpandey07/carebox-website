@@ -2062,4 +2062,232 @@ body {
     color: #141d38;
     font-family: Manrope;
 }
+/* Base styles remain the same */
 
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  /* General Layout */
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  /* Navigation */
+  .navbar {
+    padding: 10px;
+  }
+
+  .home-parent {
+    display: none; /* Hide desktop menu */
+  }
+
+  .logopng-icon {
+    width: 120px;
+  }
+
+  /* Hero Section */
+  .frame-parent {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .your-partner-in {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .we-combine-expertise {
+    font-size: 16px;
+  }
+
+  /* Features Section */
+  .frame-div {
+    flex-direction: column;
+  }
+
+  .backgroundshadow-parent {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Team Section */
+  .container1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .group-2-4,
+  .group-3-4,
+  .group-4-4 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  /* Testimonials */
+  .container2 {
+    flex-direction: column;
+  }
+
+  .group-2-41,
+  .group-3-41,
+  .group-4-41 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  /* Why CareBox Section */
+  .process-line-1svg-parent {
+    flex-direction: column;
+  }
+
+  .backgroundshadow4,
+  .backgroundshadow5,
+  .backgroundshadow6,
+  .backgroundshadow7 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Footer */
+  .frame-parent8 {
+    flex-direction: column;
+  }
+
+  .frame-parent9,
+  .frame-parent10,
+  .frame-parent11 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+  .your-partner-in {
+    font-size: 20px;
+  }
+
+  .we-combine-expertise {
+    font-size: 14px;
+  }
+
+  .container-icon,
+  .container-icon1,
+  .container-icon2 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Add these mobile menu styles at the end of your existing CSS */
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.mobile-menu-btn span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    padding: 80px 20px 20px;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.mobile-nav.active {
+    left: 0;
+}
+
+.mobile-nav-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mobile-nav-item {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Update existing media queries */
+@media screen and (max-width: 768px) {
+    .mobile-menu-btn {
+        display: flex;
+    }
+
+    .home-parent {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    /* When menu is open */
+    .mobile-menu-btn.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    .mobile-menu-btn.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu-btn.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+}
+
+/* Add these styles for navigation links */
+.home-parent a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.home-parent a:hover {
+    color: #007bff; /* Or your preferred hover color */
+}
+
+/* Update existing classes */
+.home1, .about-us, .product-solutions, .contact-us {
+    cursor: pointer;
+}
+
+/* Mobile menu links */
+@media screen and (max-width: 768px) {
+    .mobile-nav-items a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        padding: 10px 15px;
+        transition: background-color 0.3s ease;
+    }
+
+    .mobile-nav-items a:hover {
+        background-color: #f5f5f5;
+    }
+}
