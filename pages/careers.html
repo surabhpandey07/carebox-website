@@ -1,74 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Care Box</title>
+    <link rel="stylesheet" href="/css/pagescss/careers.css">
     
-    <link rel="stylesheet" href="/css/pagescss/careers.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Font+Awesome+5+Free:wght@400&display=swap" />
 </head>
 <body>
-    <div class="infai-website-with-background">
-        <!-- Navbar -->
-        <div class="navbar">
-            <!-- Logo -->
-            <img class="logopng-icon" alt="Logo" src="/assets/images/Logo.png">
-            
-            <!-- Hamburger Menu Button -->
-            <div class="mobile-menu-btn" id="mobileMenuBtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <div class="navbar">
+        <img class="logopng-icon" alt="" src="/assets/images/logo.png">
         
-            <!-- Mobile Navigation Menu -->
-            <div class="mobile-nav" id="mobileNav">
-                <div class="mobile-nav-items">
-                    <a href="/index.html" class="mobile-nav-item">Home</a>
-                    <a href="/pages/about.html" class="mobile-nav-item">About Us</a>
-                    <a href="/pages/product.html" class="mobile-nav-item">Product & Solutions</a>
-                    <a href="/pages/careers.html" class="mobile-nav-item">Careers</a>
-                    <a href="/pages/contact.html" class="mobile-nav-item">Contact Us</a>
-                </div>
-            </div>
+        <!-- Hamburger Menu Button -->
+        <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         
-            <!-- Desktop Navigation Menu -->
-            <div class="home-parent">
-                <div class="home1"><a href="/index.html">Home</a></div>
-                <div class="about-us"><a href="/pages/about.html">About Us</a></div>
-                <div class="product-solutions"><a href="/pages/product.html">Product & Solutions</a></div>
-                <div class="product-solutions"><a href="/pages/careers.html">Careers</a></div>
-                <div class="contact-us"><a href="/pages/contact.html">Contact Us</a></div>
-            </div>
-        
-            <!-- Sign In Button -->
-            <div class="link">
-                <div class="gradient"></div>
-                <div class="sign-in">
-                    <span class="sign-in-txt-container">
-                        <span class="r">Sign </span>
-                        <span class="equest-a-demo">IN</span>
-                    </span>
-                </div>
-            </div>
+        <div class="home-parent">
+            <div class="home">Home</div>
+            <div class="about-us">About Us</div>
+            <div class="product-solutions">Product & Solutions</div>
+            <div class="careers">Careers</div>
+            <div class="contact-us" id="contactUsText">Contact Us</div>
         </div>
     </div>
-        <!-- Hero Section -->
-        <div class="backgroundoverlay">
-            <div class="overlay-parent">
-                <div class="overlay">
-                    <div class="heading-6">Careers</div>
-                </div>
-                <b class="join-us-in-container">
-                    <span class="sign-in-txt-container">
-                        <span>Join us in making a difference in advancing the </span>
-                        <span class="global-future-of">global future of healthcare industry</span>
-                    </span>
-                </b>
-            </div>
-        </div>
+<b class="vision">Vision</b>
+<b class="why-care-box">Why Care Box</b>
+<div class="backgroundoverlay">
+<div class="overlay-parent">
+<div class="overlay">
+<div class="heading-6">Careers</div>
+</div>
+<b class="join-us-in-container">
+<span class="sign-in-txt-container">
+<span>Join us in making a difference in advancing the </span>
+<span class="global-future-of">global future of healthcare industry</span>
+</span>
+</b>
+</div>
+</div>
 
     		<img class="section-icon" alt="" src="/assets/images/careersectionbg.png">
     		
@@ -284,6 +256,13 @@
   	
   	
    <!-- Scripts -->
+   <script>
+    var contactUsText = document.getElementById("contactUsText");
+    if(contactUsText) {
+          contactUsText.addEventListener("click", function (e) {
+                // Add your code here
+          });
+    }</script>
     <script src="/js/components/main.js"></script>
     <script src="/js/components/careers.js"></script> 	
    	
