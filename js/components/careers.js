@@ -1,40 +1,36 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    const mobileMenu = document.querySelector('.home-parent');
-    const spans = mobileMenuBtn.querySelectorAll('span');
-  
+document.addEventListener('DOMContentLoaded', function() {
+    // Get elements
+    const menuBtn = document.getElementById('mobileMenuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    const body = document.body;
+
     // Toggle menu function
-    const toggleMenu = (show) => {
-        mobileMenu.classList.toggle('active', show);
-        
-        spans[0].style.transform = show ? 'rotate(45deg) translate(5px, 5px)' : 'none';
-        spans[1].style.opacity = show ? '0' : '1';
-        spans[2].style.transform = show ? 'rotate(-45deg) translate(7px, -7px)' : 'none';
-    };
-  
-    // Toggle on button click
-    mobileMenuBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const willShow = !mobileMenu.classList.contains('active');
-        toggleMenu(willShow);
-    });
-  
+    function toggleMenu() {
+        menuBtn.classList.toggle('active');
+        mobileNav.classList.toggle('active');
+        body.classList.toggle('menu-open');
+    }
+
+    // Add click event to menu button
+    menuBtn.addEventListener('click', toggleMenu);
+
     // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
-            toggleMenu(false);
+    document.addEventListener('click', function(e) {
+        if (!mobileNav.contains(e.target) && !menuBtn.contains(e.target) && mobileNav.classList.contains('active')) {
+            toggleMenu();
         }
     });
-  
-    // Close menu on window resize
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > 480) {
-            toggleMenu(false);
-        }
+
+    // Close menu when clicking on a link
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-item');
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', toggleMenu);
     });
-  
-    // Prevent menu close when clicking inside menu
-    mobileMenu.addEventListener('click', (e) => {
-        e.stopPropagation();
+
+    // Close menu on resize if open
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768 && mobileNav.classList.contains('active')) {
+            toggleMenu();
+        }
     });
 });
