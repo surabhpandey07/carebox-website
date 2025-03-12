@@ -221,6 +221,7 @@ body {
     height: 2.93%;
     width: 6.42%;
     top: 63.73%;
+    
     right: 56.33%;
     bottom: 33.33%;
     left: 37.25%;
@@ -732,7 +733,7 @@ body {
     color: #0048ae;
 }
 .frame-container {
-    position: absolute;
+    position: relative;
     top: 1290px;
     left: calc(50% - 644px);
     width: 1288px;
@@ -2141,6 +2142,7 @@ body {
     background-color: #fff;
     height: 5831px;
     overflow: hidden;
+    padding-top: 90px;
     text-align: center;
     font-size: 40px;
     color: #141d38;
@@ -2743,4 +2745,51 @@ body {
     .mobile-footer-section ul li a:hover {
         color: #fff;
     }
+}
+
+/* Mobile Footer Typography Updates */
+.mobile-footer {
+    font-family: Manrope, sans-serif;
+}
+
+.mobile-footer-section h3 {
+    font-family: Manrope;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+.mobile-footer-desc {
+    font-family: Manrope;
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 600;
+    color: #cbcfd6;
+}
+
+.mobile-footer-section ul li a {
+    font-family: Manrope;
+    font-size: 17px;
+    line-height: 23.8px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #cbcfd6;
+}
+
+.mobile-contact-item p,
+.mobile-contact-item a {
+    font-family: Manrope;
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: 600;
+    color: #cbcfd6;
+}
+
+.mobile-footer-bottom p {
+    font-family: Manrope;
+    font-size: 14px;
+    color: #cbcfd6;
 }

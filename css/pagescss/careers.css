@@ -166,7 +166,7 @@ body {
 }
 .home-parent {
     position: absolute;
-    top: 25px;
+    top: 15px;
     left: calc(50% - 338.32px);
     display: flex;
     flex-direction: row;
@@ -175,6 +175,9 @@ body {
     gap: 52px;
     font-size: 18px;
     color: #202122;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
 }
 .navbar {
     position: absolute;
@@ -1623,3 +1626,50 @@ body {
         color: #fff;
     }
 }
+/* Mobile Footer Typography Updates */
+.mobile-footer {
+    font-family: Manrope, sans-serif;
+}
+
+.mobile-footer-section h3 {
+    font-family: Manrope;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+.mobile-footer-desc {
+    font-family: Manrope;
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 600;
+    color: #cbcfd6;
+}
+
+.mobile-footer-section ul li a {
+    font-family: Manrope;
+    font-size: 17px;
+    line-height: 23.8px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #cbcfd6;
+}
+
+.mobile-contact-item p,
+.mobile-contact-item a {
+    font-family: Manrope;
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: 600;
+    color: #cbcfd6;
+}
+
+.mobile-footer-bottom p {
+    font-family: Manrope;
+    font-size: 14px;
+    color: #cbcfd6;
+}
+
