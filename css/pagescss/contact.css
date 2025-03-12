@@ -155,7 +155,7 @@
 }
 .home-parent {
     position: absolute;
-    top: 25px;
+    top: 15px;
     left: calc(50% - 338.32px);
     display: flex;
     flex-direction: row;
