@@ -1448,6 +1448,10 @@ body {
     transition: color 0.3s ease;
 }
 
+.mobile-footer-section ul li a:hover {
+    color: #fff;
+}
+
 .mobile-contact-item {
     display: flex;
     align-items: flex-start;
@@ -1498,4 +1502,124 @@ body {
         min-height: 100vh;
     }
 }
+/* Enhanced Mobile Footer Styles */
+.mobile-footer {
+    /* Newsletter Styles */
+    .mobile-newsletter {
+        margin-top: 25px;
+    }
 
+    .mobile-input-group {
+        position: relative;
+        display: flex;
+        align-items: center;
+        background: #fff;
+        border-radius: 10px;
+        padding: 8px 12px;
+        border: 1px solid #cec6ef;
+    }
+
+    .mobile-input-group img:first-child {
+        width: 20px;
+        height: 18px;
+        margin-right: 12px;
+    }
+
+    .mobile-input-group input {
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        color: #777;
+    }
+
+    .mobile-input-group button {
+        width: 42px;
+        height: 42px;
+        border: none;
+        background: none;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .mobile-input-group button img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+
+    /* Contact Items Enhancement */
+    .mobile-contact-icon {
+        background: #0e53b3;
+        border: 2px solid #2a66b9;
+        border-radius: 50%;
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .mobile-contact-icon img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .mobile-contact-text {
+        flex: 1;
+    }
+
+    .contact-label {
+        color: #fff;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .mobile-contact-text p,
+    .mobile-contact-text a {
+        margin: 0;
+    }
+}
+
+.mobile-footer {
+    /* ...existing code... */
+
+    .horizontal-divider {
+        width: 40px;
+        height: 1px;
+        background-color: #fff;
+        margin: 15px 0 20px;
+    }
+
+    .mobile-footer-section h3 {
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 5px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .mobile-footer-section ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-footer-section ul li {
+        margin-bottom: 12px;
+    }
+
+    .mobile-footer-section ul li a {
+        color: #cbcfd6;
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 23.8px;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+
+    .mobile-footer-section ul li a:hover {
+        color: #fff;
+    }
+}
