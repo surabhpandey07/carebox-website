@@ -118,7 +118,7 @@ body {
 }
 .careers {
     position: relative;
-    line-height: 40px;
+    line-height: 6000px;
     text-transform: capitalize;
     font-weight: 600;
     color: #5ce192;
@@ -138,7 +138,7 @@ body {
 }
 .home-parent {
     position: absolute;
-    top: 35px;
+    top: 15px;
     left: calc(50% - 338.32px);
     display: flex;
     flex-direction: row;
@@ -183,15 +183,67 @@ body {
     color: #0048ae;
 }
 .join-us-in-container {
-    width: 1046px;
     position: relative;
-    font-size: 48px;
-    line-height: 57.6px;
+    width: 100%;
+    max-width: 1046px;
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.3;
     display: flex;
     align-items: center;
-    height: 117px;
-    flex-shrink: 0;
+    justify-content: center;
+    text-align: center;
     color: #130d33;
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: 140px; /* Increased height for two lines */
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+    .join-us-in-container {
+        
+        font-size: 38px;
+        padding: 40px 0;
+        white-space: pre-line; /* Allows line breaks */
+        max-width: 1046px; /* Match your desktop width */
+        line-height: 1.2; /* Adjusted line height */
+    }
+
+    .join-us-in-container br {
+        display: block; /* Ensure line breaks are visible */
+    }
+}
+
+/* Tablet styles */
+@media screen and (max-width: 1023px) {
+    .join-us-in-container {
+        height: auto;
+        min-height: 100px;
+        padding: 30px 20px;
+        white-space: normal;
+    }
+
+    .join-us-in-container br {
+        display: none;
+    }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .join-us-in-container {
+        font-size: clamp(24px, 4vw, 32px);
+        min-height: 80px;
+        padding: 20px 15px;
+    }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+    .join-us-in-container {
+        font-size: clamp(20px, 3.5vw, 24px);
+        min-height: 60px;
+        padding: 15px 10px;
+    }
 }
 .overlay-parent {
     display: flex;
@@ -202,7 +254,7 @@ body {
 }
 .backgroundoverlay {
     position: absolute;
-    top: 90px;
+    top: 20px;
     
     width: 100%;
     height: 398.6px;
@@ -221,20 +273,56 @@ body {
 }
 .section-icon {
     position: relative;
-    top: 390px;
+    top: 360px;
     
     width: 100%;
     height: 439px;
     object-fit: cover;
 }
 .multiracial-business-team-havi-icon {
-    position: absolute;
-    top: 500px;
-    left: calc(50% - 630px);
-    width: 1360px;
-    height: 570px;
+    position: relative; /* Change from absolute */
+    width: 100%;
+    max-width: 1360px;
+    height: auto; /* Allow height to adjust proportionally */
+    margin: 40px auto;
     overflow: hidden;
     object-fit: cover;
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1441px) {
+    .multiracial-business-team-havi-icon {
+      
+        width: 1360px;
+        height: 570px;
+    }
+}
+
+/* Tablet styles */
+@media screen and (max-width: 1024px) {
+    .multiracial-business-team-havi-icon {
+        margin: 30px auto;
+        max-width: 90%;
+    }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .multiracial-business-team-havi-icon {
+       
+        max-width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        min-height: 200px; /* Minimum height for mobile */
+    }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+    .multiracial-business-team-havi-icon {
+        margin: 15px auto;
+        min-height: 150px;
+    }
 }
 .team-today {
     color: #0a50b2;
@@ -242,36 +330,295 @@ body {
 .join-our-team-container {
     position: relative;
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     text-align: center;
+    line-height: 1.3;
+    padding: 40px 20px;
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 600;
     color: #130d33;
+    text-transform: capitalize;
 }
 
 /* Desktop styles */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1024px) {
     .join-our-team-container {
-        font-size: 42px;
-        font-weight: 600;
+        font-size: 48px;
+        line-height: 50px;
+        padding: 60px 40px;
     }
 }
 
-/* Mobile responsive styles */
+/* Tablet styles */
+@media screen and (max-width: 1023px) {
+    .join-our-team-container {
+        font-size: 36px;
+        padding: 40px 30px;
+        max-width: 90%;
+    }
+}
+
+/* Mobile styles */
 @media screen and (max-width: 768px) {
     .join-our-team-container {
-        font-size: 32px;
-        line-height: 40px;
-        padding: 15px;
+        font-size: clamp(24px, 4vw, 32px);
+        padding: 30px 20px;
+        line-height: 1.4;
+        left: 0;
+        transform: none;
     }
 }
 
 /* Small mobile devices */
 @media screen and (max-width: 480px) {
     .join-our-team-container {
-        font-size: 28px;
-        line-height: 36px;
-        padding: 10px;
+        font-size: clamp(20px, 3.5vw, 24px);
+        padding: 20px 15px;
+        line-height: 1.3;
     }
+}
+/* Form Section Main Styles */
+.section {
+    position: relative;
+    top: 0;
+    padding: 80px 0;
+    background-color: #f5f5f7;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Container Styles */
+.frame-parent {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+/* Heading Styles */
+.join-our-team-container {
+    text-align: center;
+    font-size: 48px;
+    line-height: 1.2;
+    color: #130d33;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.team-today {
+    color: #0a50b2;
+    font-weight: 700;
+}
+
+/* Form Group Styles */
+.frame-group {
+    display: grid;
+    gap: 30px;
+    width: 100%;
+}
+
+/* Input Fields */
+.name-parent {
+    margin-bottom: 25px;
+}
+
+.name {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.input {
+    width: 100%;
+    height: 56px;
+    background: #f8f9fa;
+    border: 2px solid #edf3f5;
+    border-radius: 12px;
+    padding: 0 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.input:focus {
+    border-color: #0a50b2;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(10, 80, 178, 0.1);
+}
+
+/* File Upload Section */
+.add-image-sec {
+    width: 100%;
+    padding: 40px;
+    border: 2px dashed #0a50b2;
+    border-radius: 20px;
+    background: rgba(10, 80, 178, 0.02);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.add-image-sec:hover {
+    background: rgba(10, 80, 178, 0.04);
+    border-color: #5ce192;
+}
+
+.click-to-upload {
+    color: #0a50b2;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.or-drag-and {
+    color: #666;
+    font-size: 16px;
+}
+
+.pdf-jpg-jpeg {
+    color: #999;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Submit Button */
+.link1 {
+    width: 100%;
+    max-width: 200px;
+    height: 56px;
+    background: linear-gradient(135deg, #0a50b2, #5ce192);
+    border: none;
+    border-radius: 28px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 40px auto 0;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(10, 80, 178, 0.15);
+}
+
+.link1:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(10, 80, 178, 0.2);
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 1024px) {
+    .frame-div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .upload-resume-parent {
+        grid-column: span 2;
+    }
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 40px 0;
+    }
+
+    .frame-parent {
+        padding: 30px 20px;
+        margin: 0 15px;
+        border-radius: 20px;
+    }
+
+    .join-our-team-container {
+        font-size: 29px;
+        margin-bottom: 0px;
+        top: -10px;
+    }
+
+    .frame-div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input {
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .add-image-sec {
+        padding: 30px 20px;
+    }
+
+    .click-to-upload {
+        font-size: 16px;
+    }
+
+    .or-drag-and {
+        font-size: 14px;
+    }
+
+    .link1 {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+    .frame-parent {
+        padding: 20px 15px;
+    }
+
+    .join-our-team-container {
+        font-size: 28px;
+    }
+
+    .input {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .add-image-sec {
+        padding: 20px 15px;
+    }
+
+    .click-to-upload {
+        font-size: 15px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.frame-parent {
+    animation: fadeIn 0.6s ease;
+}
+
+/* Form States */
+.input:focus {
+    outline: none;
+    border-color: #ffffff;
+}
+
+.input.success {
+    border-color: #5ce192;
+    background: rgba(92, 225, 146, 0.05);
+}
+
+.input.error {
+    border-color: #ff6b6b;
+    background: rgba(255, 107, 107, 0.05);
 }
 .heading-3 {
     align-self: stretch;
@@ -279,9 +626,12 @@ body {
     height: 50px;
 }
 .name {
-    align-self: stretch;
-    position: relative;
+    width: 100%;
+    text-align: left; /* Change from center to left */
+    font-size: 15px;
     font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
 }
 .frame-icon {
     width: 20px;
@@ -428,7 +778,7 @@ body {
 }
 .submit {
     position: relative;
-    line-height: 14px;
+    line-height: 4px;
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -465,7 +815,143 @@ body {
     gap: 30px;
     padding: 40px 20px;
 }
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Form container */
+    .frame-parent {
+        width: 90%;
+        margin: -50px auto 0;
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
 
+    /* Input fields */
+    .frame-div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .name-parent {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .input {
+        width: 100%;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    /* File upload section */
+    .add-image-sec {
+        padding: 25px 15px;
+    }
+
+    .group {
+        gap: 12px;
+    }
+
+    .click-to-upload {
+        font-size: 14px;
+    }
+
+    .or-drag-and {
+        font-size: 14px;
+    }
+
+    /* Submit button */
+    .link1 {
+        width: 100%;
+        max-width: none;
+        height: 50px;
+        margin: 20px 0 0;
+    }
+
+    /* Header text */
+    .join-us-in-container {
+        font-size: 28px;
+        line-height: 1.3;
+        padding: 0 20px;
+        margin-bottom: 30px;
+        height: auto;
+    }
+
+    /* Background overlay */
+    .backgroundoverlay {
+        padding: 60px 20px;
+        height: auto;
+    }
+
+    /* Section spacing */
+    .section {
+        padding: 30px 20px;
+        top: auto;
+        position: relative;
+    }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+    .frame-parent {
+        width: 95%;
+        padding: 20px 15px;
+        margin: -30px auto 0;
+    }
+
+    .join-us-in-container {
+        font-size: 24px;
+        padding: 0 15px;
+    }
+
+    .input {
+        height: 45px;
+        font-size: 13px;
+    }
+
+    .name {
+        font-size: 13px;
+    }
+
+    .add-image-sec {
+        padding: 20px 15px;
+    }
+
+    .link1 {
+        height: 45px;
+        font-size: 14px;
+    }
+}
+
+/* Fix form layout issues */
+@media screen and (max-width: 768px) {
+    .frame-group {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .heading-3 {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .upload-resume-parent {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Improve form spacing */
+    .frame-parent > * {
+        margin-bottom: 15px;
+    }
+
+    /* Better touch targets */
+    .input,
+    .link1,
+    .add-image-sec {
+        min-height: 50px;
+        touch-action: manipulation;
+    }
+}
 /* Form groups styling */
 .frame-group {
     width: 100%;
@@ -566,8 +1052,8 @@ body {
 }
 .section {
     position: absolute;
-    top: 1249px;
-    
+    top: 1050px;
+    height: fit-content;
     background-color: #f5f5f7;
     width: 100%;
     overflow: hidden;

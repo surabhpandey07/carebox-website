@@ -686,14 +686,62 @@ body {
     height: 439px;
     object-fit: cover;
 }
+
 .multiracial-business-team-havi-icon {
     position: absolute;
-    top: calc(50% - 820px);
+    top: 100px;
     left: calc(50% - 630px);
     width: 1260px;
     height: 570px;
     overflow: hidden;
     object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+/* Add responsive styles */
+@media screen and (max-width: 1280px) {
+    .multiracial-business-team-havi-icon {
+        width: 100%;
+        left: 0;
+        height: 500px;
+        position: relative;
+        top: 0;
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .multiracial-business-team-havi-icon {
+        height: 400px;
+        margin-top: 70px; /* Account for fixed navbar */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .multiracial-business-team-havi-icon {
+        height: 300px;
+        object-position: center;
+    }
+}
+
+/* Container adjustments for mobile */
+@media screen and (max-width: 768px) {
+    .multiracial-business-team-havi-icon-container {
+        width: 100%;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .multiracial-business-team-havi-icon {
+        border-radius: 0;
+        margin: 0;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 .expert-team {
     color: #0a50b2;
@@ -879,6 +927,13 @@ body {
     align-self: stretch;
     position: relative;
     height: 470.9px;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Add gap between team members */
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
     overflow: hidden;
     flex-shrink: 0;
     font-size: 24px;
@@ -897,6 +952,9 @@ body {
     top: 1769.11px;
     left: 0;
     background-color: #f5f5f7;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
