@@ -897,9 +897,6 @@ body {
     top: 1769.11px;
     left: 0;
     background-color: #f5f5f7;
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
