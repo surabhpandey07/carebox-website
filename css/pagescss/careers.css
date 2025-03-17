@@ -520,10 +520,6 @@ body {
         padding: 30px 15px;
     }
 
-    .frame-div {
-        flex-direction: column;
-        align-items: center;
-    }
 
     .name-parent {
         max-width: 100%;
