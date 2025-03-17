@@ -138,7 +138,7 @@ body {
 }
 .home-parent {
     position: absolute;
-    top: 15px;
+    top: 35px;
     left: calc(50% - 338.32px);
     display: flex;
     flex-direction: row;
@@ -221,7 +221,7 @@ body {
 }
 .section-icon {
     position: relative;
-    top: 430px;
+    top: 390px;
     
     width: 100%;
     height: 439px;
@@ -229,9 +229,9 @@ body {
 }
 .multiracial-business-team-havi-icon {
     position: absolute;
-    top: calc(50% - 572.5px);
+    top: 500px;
     left: calc(50% - 630px);
-    width: 1260px;
+    width: 1360px;
     height: 570px;
     overflow: hidden;
     object-fit: cover;
@@ -240,11 +240,41 @@ body {
     color: #0a50b2;
 }
 .join-our-team-container {
-    position: absolute;
-    top: 0px;
-    left: calc(50% - 197.53px);
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
     line-height: 50px;
     text-transform: capitalize;
+    padding: 20px;
+    color: #130d33;
+}
+
+/* Desktop styles */
+@media screen and (min-width: 769px) {
+    .join-our-team-container {
+        font-size: 42px;
+        font-weight: 600;
+    }
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+    .join-our-team-container {
+        font-size: 32px;
+        line-height: 40px;
+        padding: 15px;
+    }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+    .join-our-team-container {
+        font-size: 28px;
+        line-height: 36px;
+        padding: 10px;
+    }
 }
 .heading-3 {
     align-self: stretch;
@@ -520,6 +550,10 @@ body {
         padding: 30px 15px;
     }
 
+    .frame-div {
+        flex-direction: column;
+        align-items: center;
+    }
 
     .name-parent {
         max-width: 100%;
@@ -533,9 +567,10 @@ body {
     justify-content: flex-start;
     gap: 24px;
 }
+/* Desktop styles remain the same */
 .section {
     position: absolute;
-    top: 1249px;
+    top: 1000px;
     background-color: #f5f5f7;
     width: 100%;
     overflow: hidden;
@@ -547,6 +582,120 @@ body {
     box-sizing: border-box;
     font-size: 40px;
     color: #130d33;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+    .section {
+        position: relative;
+        top: 0;
+        padding: 30px 20px;
+        font-size: 28px;
+    }
+
+    .heading-3-parent {
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .frame-div {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .name-parent {
+        width: 100%;
+        max-width: none;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .frame-parent1 {
+        padding: 10px 12px;
+    }
+
+    .upload-resume-parent {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .profile {
+        padding: 15px;
+    }
+
+    .text-group {
+        gap: 5px;
+    }
+
+    .click-to-upload,
+    .or-drag-and {
+        font-size: 14px;
+    }
+
+    .pdf-jpg-jpeg {
+        font-size: 12px;
+    }
+
+    .link1 {
+        width: 100%;
+        max-width: 100%;
+        margin: 15px 0 0;
+    }
+
+    .label-input {
+        width: 100%;
+        left: 0;
+        position: relative;
+        transform: none;
+    }
+
+    .container1 {
+        width: calc(100% - 40px);
+    }
+
+    .mesage-iconsvg-fill {
+        width: 100%;
+    }
+
+    .group-parent {
+        align-items: center;
+        text-align: center;
+    }
+
+    .lorem-ipsum-dolor-container {
+        height: auto;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+    .section {
+        padding: 20px 15px;
+        font-size: 24px;
+    }
+
+    .frame-parent1 {
+        padding: 8px 10px;
+    }
+
+    .name {
+        font-size: 14px;
+    }
+
+    .enter-your-name,
+    .enter-your-email {
+        font-size: 13px;
+    }
+
+    .submit {
+        font-size: 14px;
+    }
 }
 .heading-31 {
     position: absolute;
