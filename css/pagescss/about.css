@@ -688,7 +688,7 @@ body {
 }
 
 .multiracial-business-team-havi-icon {
-    position: absolute;
+    position: relative;
     top: 100px;
     left: calc(50% - 630px);
     width: 1260px;
