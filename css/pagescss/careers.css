@@ -245,9 +245,6 @@ body {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    line-height: 50px;
-    text-transform: capitalize;
-    padding: 20px;
     color: #130d33;
 }
 
@@ -567,10 +564,10 @@ body {
     justify-content: flex-start;
     gap: 24px;
 }
-/* Desktop styles remain the same */
 .section {
     position: absolute;
-    top: 1000px;
+    top: 1249px;
+    
     background-color: #f5f5f7;
     width: 100%;
     overflow: hidden;
@@ -582,120 +579,6 @@ body {
     box-sizing: border-box;
     font-size: 40px;
     color: #130d33;
-}
-
-/* Mobile responsive styles */
-@media screen and (max-width: 768px) {
-    .section {
-        position: relative;
-        top: 0;
-        padding: 30px 20px;
-        font-size: 28px;
-    }
-
-    .heading-3-parent {
-        align-items: center;
-        text-align: center;
-        gap: 16px;
-    }
-
-    .frame-div {
-        flex-direction: column;
-        gap: 15px;
-        width: 100%;
-    }
-
-    .name-parent {
-        width: 100%;
-        max-width: none;
-    }
-
-    .input {
-        width: 100%;
-    }
-
-    .frame-parent1 {
-        padding: 10px 12px;
-    }
-
-    .upload-resume-parent {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .profile {
-        padding: 15px;
-    }
-
-    .text-group {
-        gap: 5px;
-    }
-
-    .click-to-upload,
-    .or-drag-and {
-        font-size: 14px;
-    }
-
-    .pdf-jpg-jpeg {
-        font-size: 12px;
-    }
-
-    .link1 {
-        width: 100%;
-        max-width: 100%;
-        margin: 15px 0 0;
-    }
-
-    .label-input {
-        width: 100%;
-        left: 0;
-        position: relative;
-        transform: none;
-    }
-
-    .container1 {
-        width: calc(100% - 40px);
-    }
-
-    .mesage-iconsvg-fill {
-        width: 100%;
-    }
-
-    .group-parent {
-        align-items: center;
-        text-align: center;
-    }
-
-    .lorem-ipsum-dolor-container {
-        height: auto;
-        font-size: 14px;
-        line-height: 1.5;
-    }
-}
-
-/* Small mobile devices */
-@media screen and (max-width: 480px) {
-    .section {
-        padding: 20px 15px;
-        font-size: 24px;
-    }
-
-    .frame-parent1 {
-        padding: 8px 10px;
-    }
-
-    .name {
-        font-size: 14px;
-    }
-
-    .enter-your-name,
-    .enter-your-email {
-        font-size: 13px;
-    }
-
-    .submit {
-        font-size: 14px;
-    }
 }
 .heading-31 {
     position: absolute;
