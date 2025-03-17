@@ -8,7 +8,8 @@
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" />
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Font Awesome 5 Free:wght@400&display=swap" />
-  	
+  	<!-- Add this in the <head> section -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   	
   	
 </head>
@@ -73,7 +74,7 @@
               
           </div>
       </div>
-            <img src="/assets/images/about section1.png" alt="">
+         
     		<b class="vision">Vision</b>
     		<b class="why-care-box">Why Care Box</b>
     		<div class="backgroundoverlay">
@@ -89,7 +90,7 @@
         				</b>
       			</div>
     		</div>
-    		<img class="section-icon" alt="" src="/assets/images/about section1.png">
+    		
     		
     		<img class="section-icon" alt="" src="/assets/images/careersectionbg.png">
             
@@ -103,79 +104,77 @@
                                     <span class="team-today"> team today</span>
                             </b>
                         </div>
-                        <div class="frame-parent">
+                        <form id="careerForm" class="frame-parent" onsubmit="return sendEmail(event)">
                             <div class="frame-group">
-                                    <div class="frame-group">
-                                        <div class="frame-div">
-                                                <div class="name-parent">
-                                                    <div class="name">Name</div>
-                                                    <div class="input">
-                                                            <div class="frame-parent1">
-                                                                <img class="frame-icon" alt="" src="/assets/images/careeruser.svg">
-                                                                
-                                                                <div class="enter-your-name">Enter Your Name</div>
-                                                            </div>
-                                                    </div>
+                                <div class="frame-group">
+                                    <div class="frame-div">
+                                        <div class="name-parent">
+                                            <div class="name">Name</div>
+                                            <div class="input">
+                                                <div class="frame-parent1">
+                                                    <img class="frame-icon" alt="" src="/assets/images/careeruser.svg">
+                                                    <input type="text" name="name" class="form-input" placeholder="Enter Your Name" required>
                                                 </div>
-                                                <div class="name-parent">
-                                                    <div class="name">Email</div>
-                                                    <div class="input">
-                                                            <div class="frame-parent1">
-                                                                <img class="frame-icon" alt="" src="/assets/images/careermail.svg">
-                                                                
-                                                                <div class="enter-your-email">Enter Your Email</div>
-                                                            </div>
-                                                    </div>
-                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="frame-div">
-                                                <div class="name-parent">
-                                                    <div class="name">Phone Number</div>
-                                                    <div class="input">
-                                                            <div class="frame-parent1">
-                                                                <img class="frame-icon" alt="" src="/assets/images/careercall.svg">
-                                                                
-                                                                <div class="enter-your-email">Enter Your Phone</div>
-                                                            </div>
-                                                    </div>
+                                        <div class="name-parent">
+                                            <div class="name">Email</div>
+                                            <div class="input">
+                                                <div class="frame-parent1">
+                                                    <img class="frame-icon" alt="" src="/assets/images/careermail.svg">
+                                                    <input type="email" name="email" class="form-input" placeholder="Enter Your Email" required>
                                                 </div>
-                                                <div class="name-parent">
-                                                    <div class="name">Designation</div>
-                                                    <div class="input">
-                                                            <div class="frame-parent1">
-                                                                <img class="frame-icon" alt="" src="/assets/images/careerdesignation.svg">
-                                                                
-                                                                <div class="enter-your-email">Enter Your Designation</div>
-                                                            </div>
-                                                    </div>
-                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="upload-resume-parent">
-                                        <div class="name">Upload Resume</div>
-                                        <div class="add-image-sec">
-                                                <div class="profile">
-                                                    <div class="group">
-                                                            <img class="frame-icon4" alt="" src="/assets/images/careerupload.svg">
-                                                            
-                                                            <div class="text-group">
-                                                                <div class="text-links">
-                                                                        <div class="click-to-upload">Click to upload</div>
-                                                                        <div class="or-drag-and">or drag and drop</div>
-                                                                </div>
-                                                                <div class="pdf-jpg-jpeg">PDF, JPG, JPEG, PNG less than 1MB</div>
-                                                            </div>
-                                                    </div>
+                                    <div class="frame-div">
+                                        <div class="name-parent">
+                                            <div class="name">Phone Number</div>
+                                            <div class="input">
+                                                <div class="frame-parent1">
+                                                    <img class="frame-icon" alt="" src="/assets/images/careercall.svg">
+                                                    <input type="tel" name="phone" class="form-input" placeholder="Enter Your Phone" required>
                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="name-parent">
+                                            <div class="name">Designation</div>
+                                            <div class="input">
+                                                <div class="frame-parent1">
+                                                    <img class="frame-icon" alt="" src="/assets/images/careerdesignation.svg">
+                                                    <input type="text" name="designation" class="form-input" placeholder="Enter Your Designation" required>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="upload-resume-parent">
+                                    <div class="name">Upload Resume</div>
+                                    <div class="add-image-sec">
+                                        <div class="profile">
+                                            <div class="group">
+                                                <input type="file" id="resume" name="resume" accept=".pdf,.jpg,.jpeg,.png" style="display: none;" required>
+                                                <label for="resume" class="upload-label">
+                                                    <img class="frame-icon4" alt="" src="/assets/images/careerupload.svg">
+                                                    <div class="text-group">
+                                                        <div class="text-links">
+                                                            <div class="click-to-upload">Click to upload</div>
+                                                            <div class="or-drag-and">or drag and drop</div>
+                                                        </div>
+                                                        <div class="pdf-jpg-jpeg">PDF, JPG, JPEG, PNG less than 1MB</div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="link1">
-                                    <div class="submit-wrapper">
-                                        <div class="submit">sUBMIT</div>
-                                    </div>
-                            </div>
-                        </div>
+                            <button type="submit" class="link1">
+                                <div class="submit-wrapper">
+                                    <div class="submit">SUBMIT</div>
+                                </div>
+                            </button>
+                        </form>
                 </div>
             </div>
             <div class="footer">
