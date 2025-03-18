@@ -3,13 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    min-height: 100vh;
-    width: 100%;
-    overflow-x: hidden;
-}
-
 .item-link {
     position: absolute;
     top: 0px;
@@ -45,8 +38,6 @@ body {
     right: 177px;
     left: 1143px;
     height: 26px;
-    text-align: right;
-    font-family: Inter;
 }
 .navbar-child {
     position: absolute;
@@ -63,28 +54,6 @@ body {
     height: 55px;
     overflow: hidden;
     object-fit: cover;
-}
-.gradient {
-    position: absolute;
-    top: 0px;
-    left: 152.53px;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2));
-    width: 100px;
-    height: 55.2px;
-    opacity: 0.07;
-}
-
-.link {
-    position: absolute;
-    top: 22px;
-    left: 1217px;
-    border-radius: 25px;
-    background-color: #5ce192;
-    width: 129px;
-    height: 47px;
-    overflow: hidden;
-    font-size: 16px;
-    color: #fff;
 }
 .home {
     width: 50.6px;
@@ -118,7 +87,7 @@ body {
 }
 .careers {
     position: relative;
-    line-height: 0px;
+    line-height: 40px;
     text-transform: capitalize;
     font-weight: 600;
     color: #5ce192;
@@ -193,57 +162,6 @@ body {
     justify-content: center;
     text-align: center;
     color: #130d33;
-    margin: 0 auto;
-    padding: 0 20px;
-    min-height: 140px; /* Increased height for two lines */
-}
-
-/* Desktop styles */
-@media screen and (min-width: 1024px) {
-    .join-us-in-container {
-        
-        font-size: 38px;
-        padding: 40px 0;
-        white-space: pre-line; /* Allows line breaks */
-        max-width: 1046px; /* Match your desktop width */
-        line-height: 1.2; /* Adjusted line height */
-    }
-
-    .join-us-in-container br {
-        display: block; /* Ensure line breaks are visible */
-    }
-}
-
-/* Tablet styles */
-@media screen and (max-width: 1023px) {
-    .join-us-in-container {
-        height: auto;
-        min-height: 100px;
-        padding: 30px 20px;
-        white-space: normal;
-    }
-
-    .join-us-in-container br {
-        display: none;
-    }
-}
-
-/* Mobile styles */
-@media screen and (max-width: 768px) {
-    .join-us-in-container {
-        font-size: clamp(24px, 4vw, 32px);
-        min-height: 80px;
-        padding: 20px 15px;
-    }
-}
-
-/* Small mobile devices */
-@media screen and (max-width: 480px) {
-    .join-us-in-container {
-        font-size: clamp(20px, 3.5vw, 24px);
-        min-height: 60px;
-        padding: 15px 10px;
-    }
 }
 .overlay-parent {
     display: flex;
@@ -271,7 +189,6 @@ body {
     font-size: 24px;
     color: #0048ae;
 }
-/* Default Styles */
 .section-icon {
     position: relative;
     top: 360px;
@@ -280,39 +197,6 @@ body {
     max-height: 439px;
     object-fit: cover;
 }
-
-/* Desktop Styles */
-@media screen and (min-width: 1024px) {
-    .section-icon {
-        top: 360px;
-        max-height: 400px;
-    }
-}
-
-/* Tablet Styles */
-@media screen and (max-width: 1023px) {
-    .section-icon {
-        top: 200px;
-        max-height: 350px;
-    }
-}
-
-/* Mobile Styles */
-@media screen and (max-width: 768px) {
-    .section-icon {
-        top: 100px;
-        max-height: 300px;
-    }
-}
-
-/* Small Mobile Devices */
-@media screen and (max-width: 480px) {
-    .section-icon {
-        top: 50px;
-        max-height: 250px;
-    }
-}
-
 .multiracial-business-team-havi-icon {
     position: relative; /* Change from absolute */
     width: 100%;
@@ -322,8 +206,6 @@ body {
 
     overflow: hidden;
     object-fit: cover;
-    border-radius: 20px; /* Adjust value as needed for roundness */
-    transform: translateY(-10px); /* Move the image up slightly */
 }
 
 /* Desktop styles */
@@ -545,14 +427,10 @@ body {
     background: rgba(10, 80, 178, 0.04);
     border-color: #5ce192;
 }
-
 .click-to-upload {
     color: #0a50b2;
     font-weight: 600;
-    font-size: 18px;
-    margin-bottom: 8px;
 }
-
 .or-drag-and {
     color: #666;
     font-size: 16px;
@@ -886,8 +764,6 @@ body {
     gap: 20px;
     flex-wrap: wrap;
 }
-
-
 .heading-3-parent {
     align-self: stretch;
     display: flex;
@@ -2227,8 +2103,4 @@ body {
     to { opacity: 1; }
 }
 
-@keyframes slideUp {
-    from { transform: translateY(20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
 
