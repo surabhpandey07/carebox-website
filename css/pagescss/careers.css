@@ -380,8 +380,6 @@
     gap: 30px;
     width: 100%;
 }
-
-/* Input Fields */
 .name-parent {
     margin-bottom: 25px;
 }
@@ -390,8 +388,6 @@
     display: block;
     font-size: 16px;
     font-weight: 500;
-    color: #333;
-    margin-bottom: 8px;
 }
 
 .input {
@@ -542,9 +538,6 @@
         font-size: 14px;
     }
 
-    .add-image-sec {
-        padding: 20px 15px;
-    }
 
     .click-to-upload {
         font-size: 15px;
@@ -578,6 +571,13 @@
 }
 .heading-3 {
     align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.submit {
     position: relative;
     height: 50px;
 }
