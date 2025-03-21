@@ -287,6 +287,7 @@
     justify-content: flex-start;
     gap: 20px;
 }
+
 .backgroundoverlay {
     position: absolute;
     top: 90px;
@@ -1031,6 +1032,7 @@
 .image-icon {
     width: 250px;
     left: 400px;
+    top: -100px;
     position: relative;
     height: 300px;
     object-fit: cover;
@@ -1039,6 +1041,7 @@
 .image-icon1 {
     width: 250px;
     right: 400px;
+    top: -100px;
     position: relative;
     height: 300px;
     object-fit: cover;
@@ -1090,20 +1093,85 @@
 }
 .image-parent {
     position: absolute;
-    top: 743px;
+    top: 740px;
     
-    width: 100%;
+    width: 100%; /* Adjust this value if you want to make it specific */
+    height: 500px; /* Add this line to set the height */
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 0px;
+    .slider-container { 
+        position: relative;
+        width: 100%;
+        background: #dcf3ff;
+        
+        
+         overflow: hidden; 
+         border-radius: 10px; 
+         box-shadow: 10px 10px 10px rgba(185, 193, 201, 0.3);
+         
+        }
+      .slider-wrapper
+       { overflow: hidden;
+        background: #dbeaff; }
+      .slider
+       { display: flex;
+         transition: transform 0.70s ease-in-out;
+         
+         gap: 10px;
+        
+        }
+      .slide
+       {
+         min-width: calc(100% - 40px);
+         transition: transform 0.5s;
+         position: relative;
+         margin: 0 10px;
+    
+        
+        }
+      .slide
+         img { width: 100%;
+            margin: 10px;
+         border-radius: 10px;
+         display: block; }
+      .nav 
+         { 
+         position: absolute;
+         top: 50%; transform:
+         translateY(-50%);
+         cursor: pointer;
+         font-size: 20px;
+         background: rgb(0, 46, 137); 
+         color: white; 
+         border: none; 
+         padding: 15px; 
+         border-radius: 50%; 
+         transition: 0.3s; }
+         z-index: auto;
+      .nav:hover 
+        { 
+         background: rgba(0,0,0,0.9); }
+      .prev
+         { left: 15px;
+            z-index: 1; }
+      .next 
+         { right: 15px;
+            z-index: 1;
+         }
+
+    
+    
+    
 }
 .infai-website-with-background {
     width: 100%;
     position: relative;
     background-color: #fff;
-    height: 2622px;
+    height: 2680px;
     overflow: hidden;
     text-align: center;
     font-size: 14px;

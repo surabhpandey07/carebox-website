@@ -8,11 +8,9 @@
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" />
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Font Awesome 5 Free:wght@400&display=swap" />
-  	
-  	
-  	
 </head>
 <body>
+	
   	
   	<div class="infai-website-with-background">
         <div class="navbar">
@@ -77,8 +75,11 @@
             						<span class="powerful-solutions">Powerful Solutions</span>
           					</span>
         				</b>
+						
       			</div>
     		</div>
+             
+			
     		<div class="footer">
       			<div class="background">
         				<div class="container">
@@ -119,6 +120,7 @@
               							
             						</div>
           					</div>
+							
           					<div class="frame-container">
             						<div class="frame-div">
               							<div class="useful-links-parent">
@@ -152,6 +154,7 @@
                 								<div class="horizontal-divider">
                 								</div>
               							</div>
+										
               							<div class="frame-parent3">
                 								<div class="backgroundborder-parent">
                   									<div class="backgroundborder">
@@ -195,19 +198,24 @@
           					</div>
         				</div>
       			</div>
+				
       			<div class="backgroundhorizontalborder">
         				<div class="list1">
         				</div>
       			</div>
-      			<img class="svg-icon" alt="" src="/assets/images/SVG.png">
+				
       			
     		</div>
     		<div class="frame-parent4">
+				
+				
       			<div class="appointment-scheduling-parent">
         				<b class="appointment-scheduling">Appointment Scheduling</b>
         				<div class="streamlines-patient-appointmen">Streamlines patient appointments, reduces admin workload, enhances patient experience, and prevents scheduling errors & double bookings.</div>
       			</div>
+				
       			<div class="frame-wrapper">
+					
         				<div class="group-container">
           					<div class="process-line-1svg-parent">
             						<img class="process-line-1svg-icon" alt="" src="/assets/images/process_lineorg-1.svg.png">
@@ -357,6 +365,7 @@
         				</div>
       			</div>
       			<div class="container2">
+					
         				<div class="backgroundborder3">
         				</div>
       			</div>
@@ -371,18 +380,30 @@
       			<img class="image-icon1" alt="" src="/assets/images/Imagedoted.png">
       			
       			<div class="section-elm2png-parent">
-        				<img class="section-elm2png" alt="" src="/assets/images/Section → elm2.png.png">
         				
-        				<div class="appointment-scheduling-group">
-          					<img class="appointment-scheduling-icon" alt="" src="/assets/images/Appointment Scheduling.png">
-          					
-          					<div class="group-child">
-          					</div>
-        				</div>
+        				<div class="slider-container">
+							<button class="nav prev" onclick="moveSlide(-1)">&#10094;</button>
+							<div class="slider-wrapper">
+								<div class="slider">
+									<a href="page1.html" class="slide"><img src="/assets/images/Appointment Scheduling.png" alt="Slide 1"></a>
+									<a href="page2.html" class="slide"><img src="/assets/images/Appointment Scheduling.png" alt="Slide 2"></a>
+									<a href="page3.html" class="slide"><img src="/assets/images/Appointment Scheduling.png" alt="Slide 3"></a>
+									<a href="page4.html" class="slide"><img src="/assets/images/Appointment Scheduling.png" alt="Slide 4"></a>
+									<a href="page5.html" class="slide"><img src="/assets/images/Appointment Scheduling.png" alt="Slide 5"></a>
+									<a href="page6.html" class="slide"><img src="/assets/images/Appointment Scheduling.png" alt="Slide 6"></a>
+									<a href="page7.html" class="slide"><img src="/assets/images/Appointment Scheduling.png" alt="Slide 7"></a>
+									<a href="page8.html" class="slide"><img src="/assets/images/Appointment Scheduling.png" alt="Slide 8"></a>
+								</div>
+							</div>
+							<button class="nav next" onclick="moveSlide(1)">&#10095;</button>
+						</div>
+						
+						<script src="/js/components/product.js"></script>
+        				
+        				
       			</div>
     		</div>
   	</div>
-  	
   	
   	
   	
@@ -396,7 +417,7 @@
     		}
     		
     		var contactUsText = document.getElementById("contactUsText");
-    		if(contactUsText) {
+    		if(contactUsText) {+
       			contactUsText.addEventListener("click", function (e) {
         				// Add your code here
       			});
