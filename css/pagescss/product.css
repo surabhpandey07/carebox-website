@@ -1031,7 +1031,7 @@
 }
 .image-icon {
     width: 250px;
-    left: 400px;
+    left: 300px;
     top: -100px;
     position: relative;
     height: 300px;
@@ -1040,7 +1040,7 @@
 }
 .image-icon1 {
     width: 250px;
-    right: 400px;
+    right: 300px;
     top: -100px;
     position: relative;
     height: 300px;
@@ -1178,7 +1178,6 @@
     color: #0048ae;
     font-family: Manrope;
 }
-
 
 /* Mobile Responsive Styles */
 @media screen and (max-width: 768px) {
@@ -1817,7 +1816,7 @@
       font-weight: 600;
       color: #cbcfd6;
   }
-  
+ 
   .mobile-footer-bottom p {
       font-family: Manrope;
       font-size: 14px;
