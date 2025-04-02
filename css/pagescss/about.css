@@ -664,8 +664,6 @@ body {
     bottom: 0px;
     left: 0;
     width: 100%;
-    max-width: 100%;
-    margin: 0;
     height: 599px;
     overflow: hidden;
     background-image: url('Footer.png');
@@ -674,7 +672,6 @@ body {
     background-position: top;
     font-size: 17px;
     color: #cbcfd6;
-    
 }
 .section-icon {
     position: absolute;
