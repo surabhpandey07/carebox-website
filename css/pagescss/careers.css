@@ -55,13 +55,7 @@ body {
     left: 1143px;
     height: 26px;
 }
-.navbar-child {
-    position: absolute;
-    top: 0px;
-    left: calc(50% - 60.88px);
-    width: 121.8px;
-    height: 90px;
-}
+
 .logopng-icon {
     position: absolute;
     top: 18px;
@@ -1000,18 +994,6 @@ body {
     font-family: Manrope;
 }
 
-.infai-website-with-background {
-    width: 100%;
-    position: relative;
-    background-color: #fff;
-    height: 4769px;
-    overflow: hidden;
-    text-align: center;
-    font-size: 40px;
-    color: #141d38;
-    font-family: Manrope;
-}
-
 .navbar-child {
     position: absolute;
     top: 0px;
@@ -1726,6 +1708,5 @@ body {
     font-size: 14px;
     color: #cbcfd6;
 }
-
 
 
