@@ -1034,13 +1034,15 @@ body {
 
 .home1, .about-us, .product-solutions, .contact-us {
     position: relative;
+    bottom: 15px;
+    align-items: center;
     font-size: 18px;
     font-weight: 600;
     color: #202122;
     cursor: pointer;
     transition: color 0.3s ease;
-}
 
+}
 .home1 a, .about-us a, .product-solutions a, .contact-us a {
     text-decoration: none;
     color: inherit;
@@ -1302,6 +1304,7 @@ body {
 
     .mobile-nav-item {
         padding: 15px 0;
+        align-items: center;
         font-size: 16px;
         font-weight: 500;
         color: #202122;

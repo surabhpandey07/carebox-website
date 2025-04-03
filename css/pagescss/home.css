@@ -74,20 +74,15 @@ body {
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
     .dashboard-2-icon {
-        content: url('/assets/images/xyx\ -\ Copy.png'); /* Change image on mobile */
+        content: url('/assets/images/Dashboard\ 2.png'); /* Change image on mobile */
         width: 35%;
         height: auto;
-        left: 27%;
+        left: 29%;
+        top: 10%;
         
         border-radius: 20px;
     }
 }
-
-
-
-
-
-
 
 .ipad-air-space-gray-landsc-parent {
     position: absolute;
@@ -181,11 +176,12 @@ body {
     height: 16px;
     overflow: hidden;
     flex-shrink: 0;
+    right: 10px;
 }
 .div {
     position: relative;
     font-weight: 500;
-    margin-left: -2px;
+    right: 10px;
 }
 .frame-container {
     align-self: stretch;
@@ -346,7 +342,7 @@ body {
     left: calc(50% - 720px);
     width: 1440px;
     height: 907.4px;
-    background-image: url('/assets/images/Section2020.png');
+    background-image: url('/assets/images/bs.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -1922,35 +1918,7 @@ body {
     font-size: 18px;
 }
 
-/* Mobile Responsive - Slider */
-@media (max-width: 768px) {
-    .frame-wrapper5 {
-        overflow: hidden;
-        width: 100%;
-    }
-  
-    .slider-container {
-        display: flex;
-        gap: 20px;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-    }
-  
-    .slider-container::-webkit-scrollbar {
-        display: none;
-    }
-  
-    .backgroundshadow4,
-    .backgroundshadow5,
-    .backgroundshadow6,
-    .backgroundshadow7 {
-        min-width: 90%;
-        flex: 0 0 auto;
-        scroll-snap-align: center;
-    }
-}
+
 
 .heading-2-parent {
     align-self: stretch;
@@ -2124,13 +2092,15 @@ body {
 
 .home1, .about-us, .product-solutions, .contact-us {
     position: relative;
+    bottom: -3px;
+    align-items: center;
     font-size: 18px;
     font-weight: 600;
     color: #202122;
     cursor: pointer;
     transition: color 0.3s ease;
-}
 
+}
 .home1 a, .about-us a, .product-solutions a, .contact-us a {
     text-decoration: none;
     color: inherit;
@@ -2392,6 +2362,7 @@ body {
 
     .mobile-nav-item {
         padding: 15px 0;
+        align-items: center;
         font-size: 16px;
         font-weight: 500;
         color: #202122;

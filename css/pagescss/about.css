@@ -180,15 +180,13 @@ body {
     width: 100%;
 }
 .enhancing-healthcare-through-container {
-    width: 573.7px;
-    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
     font-size: 48px;
-    line-height: 57.6px;
-    display: flex;
-    align-items: center;
-    height: 116.6px;
-    flex-shrink: 0;
+    line-height: 1.2;
     color: #141d38;
+    text-align: center;
 }
 .overlay-parent {
     display: flex;
@@ -198,41 +196,28 @@ body {
     gap: 32px;
 }
 .backgroundoverlay {
-    position: absolute;
+    position: relative;
     top: 90px;
-   
     width: 100%;
-    height: 342px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 105px 433px;
-    box-sizing: border-box;
-    background-image: url('/assets/images/about\ section1.png');
+    height: auto;
+    padding: 60px 20px;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    text-align: center;
-    font-size: 24px;
-    color: #0048ae;
+    margin-bottom: 40px;
 }
 .section-icon {
     position: absolute;
-    top: 432px;
-   
+    top: 32px;
+   margin-top: 350px;
     width: 100%;
     height: 537px;
     object-fit: cover;
 }
 .multiracial-business-team-havi-icon {
-    position: absolute;
-    top: calc(50% - 1268.5px);
-    left: calc(50% - 630px);
-    width: 1260px;
-    height: 570px;
-    overflow: hidden;
-    object-fit: cover;
+    position: relative;
+    width: 100%;
+    
+    height: auto;
+    margin: 90px auto;
 }
 .particle-3png-icon {
     position: absolute;
@@ -252,6 +237,7 @@ body {
 }
 .heading-3 {
     position: absolute;
+    margin-top: 0%;
     top: 77.31px;
     left: calc(50% - 622px);
     width: 1244px;
@@ -909,16 +895,15 @@ body {
     background-repeat: no-repeat;
     background-position: top;
 }
-
 .slider-container {
     position: relative;
-    width: 70%;
+    width: 80%;
     margin: auto;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 200px; /* Added padding to shift slider down */
+    padding-top: 40px; /* Reduced padding */
 }
 .slider-wrapper {
     width: 100%;
@@ -934,6 +919,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10%;
 }
 .card {
     text-align: center;
@@ -951,7 +937,7 @@ body {
    width: 100%;
    position: relative;
    border-radius: 10px;
-   max-width: 100%;
+   max-width: 1000%;
    overflow: hidden;
    max-height: 100%;
    object-fit: cover;
@@ -1014,10 +1000,132 @@ body {
     }
 }
 
+/* General Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Container/Layout */
+    .infai-website-with-background {
+        padding: 0 15px;
+        overflow-x: hidden;
+    }
 
+    /* Header/Hero Section */
+    .backgroundoverlay {
+        padding: 40px 20px;
+    }
 
+    .enhancing-healthcare-through-container {
+        font-size: 32px;
+        line-height: 1.3;
+        padding: 0 15px;
+    }
 
+    /* Who We Are Section */
+    .heading-2 {
+        padding: 40px 20px 20px;
+    }
 
+    .who-we-are-container {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .today-in-the-container {
+        font-size: 16px;
+        line-height: 1.6;
+        padding: 0 20px;
+    }
+
+    /* Team Section */
+    .section {
+        padding: 40px 0;
+    }
+
+    .see-our-skilled-container {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    /* Team Slider */
+    .slider-container {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .slide {
+        min-width: 100%;
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .card img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    /* Mission/Vision Section */
+    .background5 {
+        padding: 40px 20px;
+    }
+
+    .frame-parent4 {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .background-parent {
+        width: 100%;
+    }
+
+    .our-mission, 
+    .our-vision {
+        font-size: 24px;
+    }
+
+    .we-strive-to-container {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* Images */
+    .section-icon,
+    .multiracial-business-team-havi-icon {
+        width: 100%;
+        height: auto;
+        margin-top: 900px;
+        object-fit: cover;
+    }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+    .enhancing-healthcare-through-container {
+        font-size: 28px;
+    }
+
+    .who-we-are-container,
+    .see-our-skilled-container {
+        font-size: 24px;
+    }
+
+    .card img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-subtitle {
+        font-size: 14px;
+    }
+}
 
 .background-icon {
     width: 77px;
@@ -1040,10 +1148,12 @@ body {
 }
 .strive-to-modernize {
     text-transform: lowercase;
+    
 }
 .we-strive-to-container {
     width: 586px;
     position: relative;
+    margin-top: 5%;
     font-size: 16px;
     line-height: 29px;
     font-family: Manrope;
@@ -1145,7 +1255,7 @@ body {
 }
 .our-tailored-system-enhances-h {
     margin: 0;
-    color: #0a50b2;
+    margin-bottom: 15px;
 }
 .today-in-the-container {
     align-self: stretch;
@@ -1161,12 +1271,14 @@ body {
     text-align: left;
     font-size: 16px;
     color: #395377;
+    padding: 0;
 }
 .heading-2-parent {
-    position: absolute;
-    top: 1169px;
-    left: calc(50% - 622px);
-    width: 1244px;
+    position: relative;
+    width: 100%;
+    max-width: 1244px;
+    margin: 40px auto;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -1180,7 +1292,7 @@ body {
     width: 100%;
     position: relative;
     background-color: #fff;
-    height: 3581px;
+    height: 3600px;
     overflow: hidden;
     text-align: left;
     font-size: 42px;
@@ -1312,7 +1424,7 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
-/* Update logo styles */
+ /* Update logo styles */
 .logopng-icon {
     width: 126px;
     height: 55px;
@@ -1614,14 +1726,275 @@ body {
         overflow: hidden;
     }
 }
+@media screen and (max-width: 768px) {
+    /* Main container adjustments */
+    .infai-website-with-background {
+        width: 100%;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    /* Header/Hero Section */
+    .backgroundoverlay {
+        width: 100%;
+        height: auto;
+        padding: 40px 20px;
+        background-size: cover;
+        margin-top: 70px; /* Account for fixed navbar */
+    }
+
+    .enhancing-healthcare-through-container {
+        width: 100%;
+        font-size: 28px;
+        line-height: 1.3;
+        height: auto;
+        padding: 0 15px;
+    }
+
+    .overlay {
+        width: auto;
+        padding: 6px 16px;
+    }
+
+    /* Images */
+    .section-icon,
+    .multiracial-business-team-havi-icon {
+        position: relative;
+        margin-top: 50px;
+        width: 100%;
+        height: auto;
+        left: 0;
+        right: 0;
+        top: 10;
+        margin: 20px 0;
+    }
+
+    .logopng-icon {
+        width: 100px;
+        height: auto;
+        left: 15px;
+    }
+
+    /* Team Section */
+    .section {
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+        margin-top: 30px;
+    }
+
+    .see-our-skilled-container {
+        position: relative;
+        left: 0;
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    /* Card Slider */
+    .slider-container {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+
+    /* Mission/Vision Section */
+    .background5 {
+        position: relative;
+        width: 100%;
+        left: 0;
+        padding: 30px 20px;
+        height: auto;
+    }
+
+    .background-parent,
+    .our-mission-parent,
+    .our-vision-parent {
+        width: 100%;
+    }
+
+    .we-strive-to-container {
+        width: 100%;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* Text Adjustments */
+    .heading-6 {
+        font-size: 18px;
+    }
+
+    .our-mission,
+    .our-vision {
+        font-size: 22px;
+        height: auto;
+    }
+
+    /* Layout Fixes */
+    .frame-parent4 {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .img-2png-icon {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: 0;
+        margin: 50px 0 !important;
+    }
+}
+
 /* Small Mobile Devices */
 @media screen and (max-width: 480px) {
-    .your-partner-in {
+    .enhancing-healthcare-through-container {
         font-size: 24px;
     }
 
-    .mobile-nav-item {
+    .heading-6 {
+        font-size: 16px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-subtitle {
+        font-size: 14px;
+    }
+
+    .we-strive-to-container {
+        font-size: 13px;
+    }
+
+    /* Adjust spacing */
+    .section {
+        margin-top: 20px;
+    }
+
+    .background5 {
+        padding: 20px 15px;
+    }
+
+    /* Further reduce image sizes */
+    .card img {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+}
+
+/* Fix position absolute issues */
+@media screen and (max-width: 768px) {
+    [class*="position: absolute"] {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+    }
+
+    .navbar {
+        position: fixed;
+    }
+}
+@media screen and (max-width: 768px) {
+    /* Who We Are Section */
+    .heading-2-parent {
+        position: relative;
+        width: 100%;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .heading-2 {
+        margin-bottom: 20px;
+    }
+
+    .who-we-are-container {
+        font-size: 28px;
+        line-height: 1.3;
+        color: #141d38;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .today-in-the-era-of-a-rapidly-wrapper {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .today-in-the-container {
         font-size: 15px;
+        line-height: 1.6;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+
+    /* Paragraph spacing */
+    .visit-our-office,
+    .our-tailored-system-enhances-h {
+        margin-bottom: 15px;
+    }
+
+    /* Text styles */
+    .we {
+        font-weight: 600;
+        color: #141d38;
+    }
+
+    .strive-to-modernize {
+        color: #666;
+    }
+
+    .carebox {
+        color: #5ce192;
+        font-weight: 600;
+    }
+
+    /* Remove extra whitespace */
+    .visit-our-office:empty {
+        display: none;
+    }
+
+    /* Adjust spacing between paragraphs */
+    p {
+        margin: 0 0 15px 0;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+    .heading-2-parent {
+        padding: 15px;
+    }
+
+    .who-we-are-container {
+        font-size: 24px;
+    }
+
+    .today-in-the-container {
+        font-size: 14px;
+        line-height: 1.5;
     }
 }
 /* Mobile-only Footer with Position Fixed */
@@ -1732,6 +2105,100 @@ body {
         min-height: 100vh;
     }
 }
+@media screen and (max-width: 768px) {
+    /* Container adjustments */
+    .infai-website-with-background {
+        width: 100%;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    /* Hero section adjustments */
+    .backgroundoverlay {
+        margin-top: 70px;
+        padding: 30px 20px;
+    }
+
+    /* Fix image spacing and layout */
+    .section-icon {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .multiracial-business-team-havi-icon {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Who We Are section spacing fix */
+    .heading-2-parent {
+        position: relative;
+        margin-top: -10px;
+        width: 100%;
+        margin: 0;
+      
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .who-we-are-container {
+        width: 100%;
+        font-size: 28px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    .today-in-the-container {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Content sections spacing */
+    .section {
+        width: 100%;
+        margin-top: 30px;
+        padding: 0;
+    }
+
+    /* Fix vertical spacing between sections */
+    .section + .section {
+        margin-top: 30px;
+    }
+
+    /* Remove any unwanted margins */
+    * {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* Additional adjustments for extra small screens */
+@media screen and (max-width: 480px) {
+    .heading-2-parent {
+        padding: 20px 15px;
+    }
+
+    .who-we-are-container {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .today-in-the-container {
+        font-size: 14px;
+    }
+}
 /* Enhanced Mobile Footer Styles */
 .mobile-footer {
     /* Newsletter Styles */
@@ -1810,11 +2277,6 @@ body {
     .mobile-contact-text a {
         margin: 0;
     }
-}
-
-
-.mobile-footer {
-    /* ...existing code... */
 
     .horizontal-divider {
         width: 40px;
@@ -1854,6 +2316,7 @@ body {
         color: #fff;
     }
 }
+
 /* Mobile Footer Typography Updates */
 .mobile-footer {
     font-family: Manrope, sans-serif;
@@ -1901,5 +2364,92 @@ body {
     font-family: Manrope;
     font-size: 14px;
     color: #cbcfd6;
+}
+
+/* Who We Are Section Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .heading-2-parent {
+        position: relative;
+        top: -50px;;
+        left: auto;
+        width: 100%;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .who-we-are-container {
+        position: relative;
+        left: auto;
+        margin-top: 50%;
+        width: 100%;
+        font-size: 28px;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    .today-in-the-container {
+        font-size: 16px;
+        line-height: 1.6;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    /* Mission Section Image Fix */
+    .background5 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        height: auto;
+        margin-top: -1050px;
+    }
+
+    .img-2png-icon {
+        position: relative;
+        
+        left: 0;
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin-bottom: 100px !important;
+        order: -1; /* This moves the image above the content */
+    }
+
+    .frame-parent4 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .background-parent,
+    .our-mission-parent,
+    .our-vision-parent {
+        width: 100%;
+    }
+
+    .we-strive-to-container {
+        width: 100%;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+/* Additional small screen adjustments */
+@media screen and (max-width: 480px) {
+    .who-we-are-container {
+        font-size: 24px;
+    }
+
+    .today-in-the-container {
+        font-size: 14px;
+    }
+
+    .img-2png-icon {
+        max-width: 280px;
+    }
 }
 

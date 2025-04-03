@@ -33,4 +33,57 @@ document.addEventListener('DOMContentLoaded', function() {
             toggleMenu();
         }
     });
+
+    const slider = document.querySelector(".slider");
+    const slides = document.querySelectorAll(".slide");
+    const prevButton = document.querySelector(".prev");
+    const nextButton = document.querySelector(".next");
+
+    let currentIndex = 0;
+    let totalSlides = slides.length;
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    // Add touch support for mobile
+    slider.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+
+    slider.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+
+        if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0) {
+                // Swiped left
+                moveSlide(1);
+            } else {
+                // Swiped right
+                moveSlide(-1);
+            }
+        }
+    }
+
+    function moveSlide(step) {
+        currentIndex = (currentIndex + step + totalSlides) % totalSlides;
+        updateSlider();
+    }
+
+    function updateSlider() {
+        let slideWidth = slides[0].offsetWidth;
+        slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+
+    // Event listeners
+    nextButton.addEventListener("click", () => moveSlide(1));
+    prevButton.addEventListener("click", () => moveSlide(-1));
+    window.addEventListener("resize", updateSlider);
+
+    // Initial setup
+    updateSlider();
 });

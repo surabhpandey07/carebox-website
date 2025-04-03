@@ -3,6 +3,7 @@
 <head>
   	<meta charset="utf-8">
   	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   	
   	<link rel="stylesheet"  href="/css/pagescss/about.css" />
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" />
@@ -94,17 +95,14 @@
 		<b class="vision">Vision</b>
 		<b class="why-care-box">Why Care Box</b>
 		<div class="backgroundoverlay">
-		<div class="overlay-parent">
-		<div class="overlay">
-		<div class="heading-6">about us</div>
-		</div>
-		<b class="enhancing-healthcare-through-container">
-		<span class="enhancing-healthcare-through-container1">
-		<span>Enhancing Healthcare </span>
-		<span class="through-technology">through Technology!</span>
-		</span>
-		</b>
-		</div>
+			<div class="overlay-parent">
+				<div class="overlay">
+					<h6 class="heading-6">ABOUT US</h6>
+				</div>
+				<div class="enhancing-healthcare-through-container">
+					<span>Enhancing Healthcare through Technology!</span>
+				</div>
+			</div>
 		</div>
 		<img class="section-icon" alt="" src="/assets/images/section cco.png">
 		<img class="multiracial-business-team-havi-icon" alt="" src="/assets/images/multiracial-business-team-having-a-meeting-in-the-office.jpg.png">
@@ -525,10 +523,29 @@
 
   	
   	<script>
+
+		var productSolutions = document.getElementById("productSolutions");
+    		if(productSolutions) {
+      			productSolutions.addEventListener("click", function (e) {
+        				// Add your code here
+
+      			});
+    		}
+    		
+    		var careersText = document.getElementById("careersText");
+    		if(careersText) {
+      			careersText.addEventListener("click", function (e) {
+        				// Add your code here
+
+
+      			});
+    		}</script>
     		var careersText = document.getElementById("careersText");
     		if(careersText) {
       			careersText.addEventListener("click", function (e) {
         				// Add your code here
       			});
-    		}</script></body>
+    		}</script>
+
+			</body>
 </html>
