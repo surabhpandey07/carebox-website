@@ -33,4 +33,26 @@ document.addEventListener('DOMContentLoaded', function() {
             toggleMenu();
         }
     });
+    let index = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+function moveSlide(direction) {
+    index += direction;
+    if (index < 0) index = totalSlides - 1;
+    if (index >= totalSlides) index = 0;
+    document.querySelector('.slider').style.transform = `translateX(-${index * (100 + 20)}%)`;
+}
+    
 });
+let index = 10;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+function moveSlide(direction) {
+    index += direction;
+    if (index < 0) index = totalSlides - 1;
+    if (index >= totalSlides) index = 0;
+    document.querySelector('.slider').style.transform = `translateX(-${index * (100)}%)`;
+}
+    

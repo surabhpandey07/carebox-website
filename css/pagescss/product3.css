@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +9,6 @@ body {
     width: 100%;
     overflow-x: hidden;
 }
-
 .symbol {
     position: absolute;
     top: 5px;
@@ -62,7 +62,7 @@ body {
     width: 121.8px;
     height: 90px;
 }
-.carebox-logo67-1-2 {
+.carebox-logo67-1-1 {
     position: absolute;
     top: 16px;
     left: 90px;
@@ -595,14 +595,14 @@ body {
     font-size: 16px;
     color: #cbcfd6;
 }
-.appointment-scheduling {
+.laboratory-radiology {
     align-self: stretch;
     position: relative;
     line-height: 50px;
     text-transform: capitalize;
 }
-.seamlessly-organizes-patient {
-    width: 860px;
+.optimizes-diagnostic-testing {
+    width: 662px;
     position: relative;
     font-size: 16px;
     line-height: 24px;
@@ -611,7 +611,7 @@ body {
     align-items: center;
     justify-content: center;
 }
-.appointment-scheduling-parent {
+.laboratory-radiology-parent {
     align-self: stretch;
     display: flex;
     flex-direction: column;
@@ -633,13 +633,17 @@ body {
     text-transform: capitalize;
     font-weight: 500;
 }
-.book {
+.electronic {
     text-transform: capitalize;
 }
-.your-slots-anytime {
+.lab-test-orders {
     text-transform: lowercase;
 }
-.book-your-slots-container {
+.real-time-tracking-of {
+    margin: 0;
+    text-transform: lowercase;
+}
+.electronic-lab-test-container {
     align-self: stretch;
     position: relative;
     font-size: 16px;
@@ -656,12 +660,13 @@ body {
 }
 .backgroundshadow-inner {
     align-self: stretch;
-    flex: 1;
+    height: 198px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     padding: 20px 0px;
+    box-sizing: border-box;
     z-index: 0;
 }
 .background2 {
@@ -719,17 +724,8 @@ body {
     align-items: center;
     justify-content: center;
 }
-.backgroundshadow-child {
-    align-self: stretch;
-    border-radius: 20px;
-    height: 198px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 20px 0px;
-    box-sizing: border-box;
-    z-index: 0;
+.ehr {
+    text-transform: uppercase;
 }
 .b1 {
     position: absolute;
@@ -754,11 +750,6 @@ body {
     box-sizing: border-box;
     gap: 10px;
 }
-.heading-35 {
-    position: relative;
-    text-transform: capitalize;
-    font-weight: 500;
-}
 .b2 {
     position: absolute;
     top: -1px;
@@ -781,10 +772,6 @@ body {
     padding: 16px 8px;
     box-sizing: border-box;
     gap: 10px;
-}
-.on-doctors-recommendation {
-    margin: 0;
-    text-transform: lowercase;
 }
 .b3 {
     position: absolute;
@@ -813,17 +800,6 @@ body {
     width: 1193.9px;
     position: relative;
     height: 230px;
-}
-.backgroundshadow-inner3 {
-    align-self: stretch;
-    height: 198px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 20px 0px;
-    box-sizing: border-box;
-    z-index: 0;
 }
 .b4 {
     position: absolute;
@@ -856,7 +832,7 @@ body {
 }
 .frame-parent4 {
     position: absolute;
-    top: 1189px;
+    top: 1196px;
     left: calc(50% - 610px);
     width: 1220px;
     display: flex;
@@ -865,15 +841,6 @@ body {
     justify-content: flex-start;
     gap: 82px;
     font-size: 40px;
-}
-.background25 {
-    position: absolute;
-    top: calc(50% - 2.5px);
-    left: calc(50% - 2.5px);
-    border-radius: 2.5px;
-    background-color: #0a50b2;
-    width: 5px;
-    height: 5px;
 }
 .backgroundborder2 {
     position: absolute;
@@ -891,11 +858,19 @@ body {
     position: relative;
     height: 20px;
 }
+.background25 {
+    position: absolute;
+    top: calc(50% - 2.5px);
+    left: calc(50% - 2.5px);
+    border-radius: 2.5px;
+    background-color: #0a50b2;
+    width: 5px;
+    height: 5px;
+}
 .container-parent {
     position: absolute;
-    top: 1044px;
-    left: calc(50% - 45px);
-    width: 90px;
+    top: 1134px;
+    left: calc(50% - 60px);
     height: 20px;
     display: flex;
     flex-direction: row;
@@ -904,7 +879,7 @@ body {
 }
 .image-icon {
     position: absolute;
-    top: 685px;
+    top: 716px;
     left: 206px;
     width: 250px;
     height: 300px;
@@ -912,56 +887,11 @@ body {
 }
 .image-icon1 {
     position: absolute;
-    top: 685px;
+    top: 716px;
     left: 974px;
     width: 250px;
     height: 300px;
     object-fit: cover;
-}
-.section-elm2png {
-    width: 646px;
-    position: relative;
-    height: 77px;
-    overflow: hidden;
-    flex-shrink: 0;
-    object-fit: cover;
-}
-.appointment-scheduling-icon {
-    position: absolute;
-    top: calc(50% - 227.5px);
-    left: calc(50% - 365px);
-    width: 730px;
-    height: 474px;
-    object-fit: cover;
-}
-.group-child {
-    position: absolute;
-    height: calc(100% - 469px);
-    width: 100%;
-    top: 0px;
-    right: 0px;
-    bottom: 469px;
-    left: 0px;
-    border-radius: 30px 30px 0px 0px;
-    background-color: #0048ae;
-    border-right: 1px solid #01a3bc;
-    border-bottom: 1px solid #01a3bc;
-    box-sizing: border-box;
-}
-.appointment-scheduling-group {
-    width: 732px;
-    position: relative;
-    height: 493px;
-}
-.section-elm2png-parent {
-    position: absolute;
-    top: 509px;
-    left: calc(50% - 366px);
-    width: 732px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
 }
 .side-arrow-icon {
     width: 48px;
@@ -980,21 +910,75 @@ body {
     justify-content: space-between;
     gap: 0px;
 }
-.container-group {
+.section-elm2png {
+    width: 646px;
+    position: relative;
+    height: 77px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+.group-child {
     position: absolute;
-    top: 1127px;
-    left: calc(50% - 45px);
-    height: 20px;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 30px 30px 0px 0px;
+    background-color: #0048ae;
+}
+.rectangle-wrapper {
+    width: 732px;
+    position: relative;
+    height: 24px;
+}
+.section-elm2png-parent {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 366px);
+    width: 732px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.new-service-master-screen-2 {
+    width: 700px;
+    position: relative;
+    max-height: 100%;
+    object-fit: cover;
+}
+.frame-child {
+    width: 32px;
+    position: relative;
+    background-color: #fff;
+    height: 476px;
+}
+.new-service-master-screen-2-parent {
+    position: absolute;
+    top: 101px;
+    left: 0px;
+    border-right: 1px solid #00a3bc;
+    border-bottom: 1px solid #00a3bc;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
 }
+.group-div {
+    position: absolute;
+    top: 509px;
+    left: calc(50% - 366px);
+    width: 732px;
+    height: 577px;
+}
 .infai-website-with-background {
     width: 100%;
     position: relative;
     background-color: #fff;
-    height: 2645px;
+    height: 2628px;
     overflow: hidden;
     text-align: center;
     font-size: 14px;
