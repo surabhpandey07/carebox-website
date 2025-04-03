@@ -18,7 +18,9 @@
     		<div class="section">
       			<img class="container-icon" alt="" src="/assets/home images/Vector.png">
       			
+      			<img class="svg-icon" alt="" src="/assets/home images/SVG.svg">
       			
+      			<img class="svg-icon1" alt="" src="/assets/home images/SVG.svg">
       			
       			<div class="home">Home</div>
       			<div class="group-parent">
@@ -92,7 +94,7 @@
         				<div class="discover-the-difference-container">
           					<span>
             						<span class="discover">Discover </span>
-            						<span class="the">the</span> 
+            						<span class="the">the</span>
             						<span class="discover"> Difference </span>
             						<span class="the">and</span>
             						<span class="discover"> Book</span>
@@ -104,7 +106,7 @@
         				</div>
       			</div>
       			<div class="frame">
-        				<img class="frame-icon" alt="" src="/assets/home images/Iconr.svg">
+        				<img class="frame-icon" alt="" src="Icon.svg">
         				
         				<div class="request-a-demo-container">
           					<span class="request-a-demo-container1">
@@ -266,70 +268,110 @@
           					<span class="team">Team</span>
         				</b>
       			</div>
-      			<div class="group-3-4-parent">
-        				<div class="group-3-4">
-          					<b class="heading-31">Manish Sheth</b>
-          					<div class="ceo-product">CEO - Product & Development</div>
-          					<div class="team-3-4jpg-parent">
-            						<div class="team-3-4jpg">
-            						</div>
-            						<img class="manish-removebg-preview-1-icon" alt="" src="/assets/home images/Manish-removebg-preview 1.png">
-            						
-          					</div>
-          					<div class="background">
-            						<div class="div1">+</div>
-          					</div>
-        				</div>
-        				<div class="group-3-4">
-          					<b class="heading-32">Chintan Sheth</b>
-          					<div class="director">Director</div>
-          					<img class="container-icon1" alt="" src="/assets/home images/team_3_4.jpg.png">
-          					
-          					<div class="background1">
-            						<div class="div1">+</div>
-          					</div>
-        				</div>
-        				<div class="group-2-5">
-          					<b class="heading-33">Ravi Pandya</b>
-          					<div class="ceo-planning">CEO – Planning & Strategy</div>
-          					<div class="team-3-4jpg-group">
-            						<div class="team-3-4jpg">
-            						</div>
-            						<img class="ravi-removebg-preview-1-icon" alt="" src="/assets/home images/RAVI-removebg-preview 1.png">
-            						
-          					</div>
-          					<div class="background2">
-            						<div class="div1">+</div>
-          					</div>
-        				</div>
-      			</div>
-      			<div class="side-arrow-parent">
-        				<img class="side-arrow-icon" alt="" src="/assets/home images/side arrow.png">
-        				
-        				<img class="side-arrow-icon" alt="" src="/assets/home images/side arrow2.png">
-        				
-      			</div>
-      			<div class="container-parent">
-        				<div class="container">
-          					<div class="backgroundborder">
-            						<div class="background3">
-            						</div>
-          					</div>
-        				</div>
-        				<div class="container">
-          					<div class="backgroundborder">
-          					</div>
-        				</div>
-        				<div class="container">
-          					<div class="backgroundborder">
-          					</div>
-        				</div>
-        				<div class="container">
-          					<div class="backgroundborder">
-          					</div>
-        				</div>
-      			</div>
-    		</div>
+				  <div class="slider-container">
+					<button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+					<div class="slider-wrapper">
+						<div class="slider" id="sliderContainer">
+							<div class="slide">
+								<div class="card">
+									<img src="/assets/home images/Manish-removebg-preview 1.png" alt="Manish Sheth">
+									<h3 class="card-title">Manish Sheth</h3>
+									<p class="card-subtitle">CEO - Product & Development</p>
+									<button class="info-btn">+</button>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="card">
+									<img src="/assets/home images/team_3_4.jpg.png" alt="Chintan Sheth">
+									<h3 class="card-title">Chintan Sheth</h3>
+									<p class="card-subtitle">Director</p>
+									<button class="info-btn">+</button>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="card">
+									<img src="/assets/home images/RAVI-removebg-preview 1.png" alt="Ravi Pandya">
+									<h3 class="card-title">Ravi Pandya</h3>
+									<p class="card-subtitle">CEO - Planning & Strategy</p>
+									<button class="info-btn">+</button>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="card">
+									<img src="/assets/home images/sam.png" alt="Team Member 4">
+									<h3 class="card-title">Satish Bahuguna</h3>
+									<p class="card-subtitle">Project Head</p>
+									<button class="info-btn">+</button>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="card">
+									<img src="/assets/home images/NEHA-removebg-preview 1.png" alt="Team Member 4">
+									<h3 class="card-title">Neha Nagpurkar</h3>
+									<p class="card-subtitle">Technical Head</p>
+									<button class="info-btn">+</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="next" onclick="moveSlide(1)">&#10095;</button>
+					
+
+				</div>
+
+				</div>
+
+				<script>
+					let currentIndex = 0;
+					function moveSlide(step) {
+						const slides = document.querySelectorAll('.slide');
+						const totalSlides = slides.length - 2;
+						currentIndex = (currentIndex + step + totalSlides) % totalSlides;
+						document.getElementById('sliderContainer').style.transform = `translateX(-${currentIndex * (100 / 3)}%)`;
+					}
+					document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.querySelector(".slider");
+    const slides = document.querySelectorAll(".slide");
+    const prevButton = document.querySelector(".prev");
+    const nextButton = document.querySelector(".next");
+
+    let currentIndex = 0;
+    let totalSlides = slides.length;
+
+    function updateSlider() {
+        let slideWidth = slides[0].offsetWidth;
+        slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+
+    nextButton.addEventListener("click", function () {
+        if (currentIndex < totalSlides - 1) {
+            currentIndex++;
+        } else {
+            currentIndex = 0; // Loop back to start
+        }
+        updateSlider();
+    });
+
+    prevButton.addEventListener("click", function () {
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            currentIndex = totalSlides - 1; // Loop to end
+        }
+        updateSlider();
+    });
+
+    // Ensure correct positioning on window resize
+    window.addEventListener("resize", updateSlider);
+});
+
+				</script>
+				
+
+
+
+
+
     		<div class="footer">
       			<div class="background4">
         				<div class="container4">

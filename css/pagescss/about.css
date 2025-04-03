@@ -9,6 +9,7 @@ body {
     overflow-x: hidden;
 }
 
+
 .symbol {
     position: absolute;
     top: 5px;
@@ -162,7 +163,7 @@ body {
     font-weight: 600;
 }
 .overlay {
-    width: 192px;
+    width: 162px;
     border-radius: 50px;
     background-color: rgba(0, 72, 174, 0.1);
     display: flex;
