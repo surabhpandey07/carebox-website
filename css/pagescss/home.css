@@ -647,13 +647,33 @@ body {
 .frame-parent4 {
     align-self: stretch;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Default for desktop */
     align-items: center;
     justify-content: space-between;
     gap: 0px;
     font-size: 20px;
     color: #0048ae;
 }
+
+/* Mobile View (Tablets & Phones) */
+@media screen and (max-width: 768px) {
+    .frame-parent4 {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        justify-content: center; /* Even spacing */
+        gap: 10px; /* Add spacing */
+        font-size: 18px; /* Slightly reduce font size */
+    }
+}
+
+/* Extra Small Screens (Phones) */
+@media screen and (max-width: 480px) {
+    .frame-parent4 {
+        font-size: 16px; /* Further reduce font size */
+        gap: 15px; /* Increase spacing */
+    }
+}
+
 .frame-parent3 {
     position: absolute;
     top: 1233px;
@@ -1901,6 +1921,37 @@ body {
     justify-content: flex-start;
     font-size: 18px;
 }
+
+/* Mobile Responsive - Slider */
+@media (max-width: 768px) {
+    .frame-wrapper5 {
+        overflow: hidden;
+        width: 100%;
+    }
+  
+    .slider-container {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+  
+    .slider-container::-webkit-scrollbar {
+        display: none;
+    }
+  
+    .backgroundshadow4,
+    .backgroundshadow5,
+    .backgroundshadow6,
+    .backgroundshadow7 {
+        min-width: 90%;
+        flex: 0 0 auto;
+        scroll-snap-align: center;
+    }
+}
+
 .heading-2-parent {
     align-self: stretch;
     display: flex;
