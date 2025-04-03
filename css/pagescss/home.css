@@ -64,10 +64,31 @@ body {
     top: 39px;
     left: 30px;
     border-radius: 30px;
-    width: 823.2px;
-    height: 535px;
+    width: 100%;
+    max-width: 823.2px;
+    height: auto;
     object-fit: cover;
+    content: url('/assets/images/Dashboard\ 2.png'); /* Default desktop image */
 }
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .dashboard-2-icon {
+        content: url('/assets/images/xyx\ -\ Copy.png'); /* Change image on mobile */
+        width: 35%;
+        height: auto;
+        left: 27%;
+        
+        border-radius: 20px;
+    }
+}
+
+
+
+
+
+
+
 .ipad-air-space-gray-landsc-parent {
     position: absolute;
     height: 100%;
@@ -77,6 +98,28 @@ body {
     bottom: 0%;
     left: 5.85%;
 }
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .ipad-air-space-gray-landsc-parent {
+        width: 95%; /* Make it wider for small screens */
+        left: 2.5%; /* Center horizontally */
+        right: 2.5%;
+         /* Adjust height based on content */
+        top: 10px; /* Reduce top margin for better fit */
+    }
+}
+
+/* Extra Small Screens (Phones) */
+@media screen and (max-width: 480px) {
+    .ipad-air-space-gray-landsc-parent {
+        width: 100%; /* Take full width */
+        left: 0;
+        right: 0;
+        /* Maintain aspect ratio */
+        top: 5px; /* Further reduce top spacing */
+    }
+}
+
 .graph-33-child {
     position: absolute;
     top: 0px;
@@ -321,7 +364,12 @@ body {
     justify-content: center;
     height: 197px;
     flex-shrink: 0;
+    font-size: 36px; /* Default size for desktop */
+    text-align: center; /* Ensures center alignment */
+    padding: 20px; /* Adds spacing */
 }
+
+/* Wrapper Styling */
 .your-partner-in-modern-healthc-wrapper {
     align-self: stretch;
     display: flex;
@@ -329,25 +377,51 @@ body {
     align-items: center;
     justify-content: flex-start;
 }
+
+/* Responsive Text for Mobile */
+@media screen and (max-width: 768px) {
+    .your-partner-in {
+        font-size: 14px; /* Reduce font size for better mobile readability */
+        height: auto; /* Adjust height dynamically */
+        padding: 10px; /* Adjust padding */
+    }
+}
+
+/* Discover Section */
 .discover {
     text-transform: capitalize;
 }
+
 .the {
     text-transform: lowercase;
 }
+
 .discover-the-difference-container {
     align-self: center;
     position: relative;
-    font-size: 20px;
+    font-size: 5px;
     color: #fff;
     display: flex;
     align-items: center;
     height: 22px;
     flex-shrink: 0;
+    text-align: center; /* Ensure text is centered */
+    padding: 10px; /* Add padding for better spacing */
 }
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .discover-the-difference-container {
+        font-size: 12px; /* Reduce font size for mobile */
+        height: auto; /* Allow flexible height */
+        padding: 5px; /* Adjust spacing */
+    }
+}
+
 .request-a-demo-container1 {
     width: 100%;
 }
+
 .request-a-demo-container {
     width: 129px;
     position: relative;
@@ -357,6 +431,18 @@ body {
     height: 23px;
     flex-shrink: 0;
 }
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .request-a-demo-container {
+        width: 100%; /* Make it full width on small screens */
+        text-align: center; /* Center align text */
+        font-size: 14px; /* Adjust font size for better readability */
+        height: auto; /* Allow dynamic height */
+        padding: 10px 0; /* Add some padding for spacing */
+    }
+}
+
 .frame {
     width: 211px;
     border-radius: 100px;
@@ -872,7 +958,7 @@ body {
 
 .slider-container {
     position: relative;
-    width: 70%;
+    width: 80%;
     margin: auto;
     overflow: hidden;
     display: flex;
@@ -911,7 +997,7 @@ body {
    width: 100%;
    position: relative;
    border-radius: 10px;
-   max-width: 100%;
+   max-width: 1000%;
    overflow: hidden;
    max-height: 100%;
    object-fit: cover;

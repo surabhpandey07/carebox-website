@@ -34,3 +34,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+window.addEventListener('resize', function () {
+    let img = document.getElementById("dashboardImage");
+    if (window.innerWidth <= 768) {
+        img.src = "/assets/images/mobile-image.png"; // Change to mobile image
+    } else {
+        img.src = "/assets/images/desktop-image.png"; // Keep desktop image
+    }
+});
+
+// Run once on load
+window.dispatchEvent(new Event('resize'));
