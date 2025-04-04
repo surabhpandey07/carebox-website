@@ -249,7 +249,7 @@ body {
 }
 .heading-3 {
     position: absolute;
-    margin-top: 0%;
+    margin-top: 2%;
     top: 77.31px;
     left: calc(50% - 622px);
     width: 1244px;
@@ -1127,7 +1127,7 @@ body {
     .section-icon,
     .multiracial-business-team-havi-icon {
         width: 100%;
-        height: auto;
+        height: 500px;
        
         object-fit: cover;
     }
