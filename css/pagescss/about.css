@@ -209,8 +209,12 @@ body {
     width: 100%;
     height: auto;
     padding: 60px 20px;
+    background-image: url('/assets/images/about\ section1.png'); /* Add your image path */
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin-bottom: 40px;
+    position: relative;
 }
 .section-icon {
     position: absolute;
