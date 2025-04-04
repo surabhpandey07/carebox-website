@@ -1887,7 +1887,7 @@ body {
 
     .img-2png-icon {
         position: relative;
-       
+        top: -50px;
         width: 100%;
         
         height: auto;
