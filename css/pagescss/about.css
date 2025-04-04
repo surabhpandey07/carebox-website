@@ -486,7 +486,7 @@ body {
     height: 727px;
     overflow: hidden;
     flex-shrink: 0;
-    background-image: url('/assets/images/Sectionbg.png');
+    background-image: url('/assets/images/Sectiont.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -1885,17 +1885,9 @@ body {
         padding: 0 20px;
     }
 
-    .img-2png-icon {
-        position: relative;
-        top: -10px;
-        width: 100%;
-        
-        height: auto;
-        margin-top: 550px;
-        left: 0;
-        margin: 20px 0 !important;
-    }
+    
 }
+
 
 /* Small Mobile Devices */
 @media screen and (max-width: 480px) {
@@ -2377,6 +2369,28 @@ body {
         margin-bottom: 30px !important;
         order: -1; /* This moves the image above the content */
     }
+    /* Mobile responsive adjustments */
+@media screen and (max-width: 768px) {
+    .img-2png-icon {
+        position: relative;
+        top: -200px;
+        left: 0;
+        width: 100%;
+        max-width: 350px;
+        height: 450px; /* Decreased height for mobile */
+        border-radius: 50px;
+        margin: 50px 0 !important;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .img-2png-icon {
+        top: 80px;
+        max-width: 280px;
+        height: 350px; /* Further decreased for smaller screens */
+    }
+}
 
     .frame-parent4 {
         width: 100%;
