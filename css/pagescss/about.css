@@ -2390,10 +2390,12 @@ body {
 
 @media screen and (max-width: 480px) {
     .img-2png-icon {
-        top: 80px;
+        top: 40px;
         max-width: 280px;
         height: 350px; /* Further decreased for smaller screens */
+        left: -10%;
     }
+    
 }
 
     .frame-parent4 {
