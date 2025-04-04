@@ -160,7 +160,9 @@ body {
 .heading-6 {
     position: relative;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
+    color: #0a50b2;
+    
 }
 .overlay {
     width: 162px;
@@ -174,7 +176,7 @@ body {
     box-sizing: border-box;
 }
 .through-technology {
-    color: #0a50b2;
+    color: #ffffff;
 }
 .enhancing-healthcare-through-container1 {
     width: 100%;
@@ -197,7 +199,7 @@ body {
 }
 .backgroundoverlay {
     position: relative;
-    top: 90px;
+    top: 80px;
     width: 100%;
     height: auto;
     padding: 60px 20px;
@@ -215,9 +217,11 @@ body {
 .multiracial-business-team-havi-icon {
     position: relative;
     width: 100%;
-    
+    max-width: 1260px;
     height: auto;
-    margin: 90px auto;
+    margin: 0 auto;
+    display: block;
+    z-index: 1;
 }
 .particle-3png-icon {
     position: absolute;
@@ -474,7 +478,7 @@ body {
     height: 727px;
     overflow: hidden;
     flex-shrink: 0;
-    background-image: url('/assets/images/');
+    background-image: url('/assets/images/Sectionbg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -873,7 +877,7 @@ body {
 .section-parent {
     position: absolute;
     bottom: 0px;
-    
+    height: -px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -981,6 +985,7 @@ body {
  /* Responsive Styles */
 @media screen and (max-width: 1024px) {
     .slide {
+        
         min-width: 50%; /* Show 2 cards per slide */
     }
 }
@@ -992,7 +997,7 @@ body {
     
     .slider-container {
         width: 90%; /* Reduce width for smaller screens */
-        padding-top: 150px; /* Adjust padding for better layout */
+        padding-top: px; /* Adjust padding for better layout */
     }
     
     .prev, .next {
@@ -1011,6 +1016,7 @@ body {
     /* Header/Hero Section */
     .backgroundoverlay {
         padding: 40px 20px;
+        top: 10px;
     }
 
     .enhancing-healthcare-through-container {
@@ -1070,7 +1076,7 @@ body {
 
     /* Mission/Vision Section */
     .background5 {
-        padding: 40px 20px;
+        padding: 0px 20px;
     }
 
     .frame-parent4 {
@@ -1097,7 +1103,7 @@ body {
     .multiracial-business-team-havi-icon {
         width: 100%;
         height: auto;
-        margin-top: 900px;
+        margin-top: 1000px;
         object-fit: cover;
     }
 }
@@ -1225,6 +1231,7 @@ body {
     font-size: 20px;
     color: #130d33;
     font-family: Inter;
+    z-index: 2;
 }
 .we-are {
     color: #0048ae;
@@ -1255,7 +1262,7 @@ body {
 }
 .our-tailored-system-enhances-h {
     margin: 0;
-    margin-bottom: 15px;
+    color: #0a50b2;
 }
 .today-in-the-container {
     align-self: stretch;
@@ -1271,22 +1278,22 @@ body {
     text-align: left;
     font-size: 16px;
     color: #395377;
-    padding: 0;
 }
 .heading-2-parent {
     position: relative;
     width: 100%;
     max-width: 1244px;
-    margin: 40px auto;
-    padding: 0 20px;
+    margin: 0 auto;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-start;
+    align-items: center;
     gap: 32px;
     text-align: center;
     font-size: 40px;
     color: #141d38;
+    margin-top: -500px; /* Adjust this value to move the section up */
+    z-index: 3; /* Ensure it appears above the image */
 }
 .infai-website-with-background {
     width: 100%;
@@ -1765,7 +1772,7 @@ body {
         height: auto;
         left: 0;
         right: 0;
-        top: 10;
+        top: 0;
         margin: 20px 0;
     }
 
@@ -1852,10 +1859,13 @@ body {
 
     .img-2png-icon {
         position: relative;
+        top: 1200px;
         width: 100%;
+        
         height: auto;
+        margin-top: 550px;
         left: 0;
-        margin: 50px 0 !important;
+        margin: 20px 0 !important;
     }
 }
 
@@ -1909,92 +1919,6 @@ body {
 
     .navbar {
         position: fixed;
-    }
-}
-@media screen and (max-width: 768px) {
-    /* Who We Are Section */
-    .heading-2-parent {
-        position: relative;
-        width: 100%;
-        padding: 20px;
-        margin-top: 30px;
-    }
-
-    .heading-2 {
-        margin-bottom: 20px;
-    }
-
-    .who-we-are-container {
-        font-size: 28px;
-        line-height: 1.3;
-        color: #141d38;
-        text-align: left;
-        margin-bottom: 15px;
-    }
-
-    .today-in-the-era-of-a-rapidly-wrapper {
-        width: 100%;
-        height: auto;
-        padding: 0;
-    }
-
-    .today-in-the-container {
-        font-size: 15px;
-        line-height: 1.6;
-        padding: 0;
-        margin: 0;
-        text-align: left;
-    }
-
-    /* Paragraph spacing */
-    .visit-our-office,
-    .our-tailored-system-enhances-h {
-        margin-bottom: 15px;
-    }
-
-    /* Text styles */
-    .we {
-        font-weight: 600;
-        color: #141d38;
-    }
-
-    .strive-to-modernize {
-        color: #666;
-    }
-
-    .carebox {
-        color: #5ce192;
-        font-weight: 600;
-    }
-
-    /* Remove extra whitespace */
-    .visit-our-office:empty {
-        display: none;
-    }
-
-    /* Adjust spacing between paragraphs */
-    p {
-        margin: 0 0 15px 0;
-    }
-
-    p:last-child {
-        margin-bottom: 0;
-    }
-}
-
-/* Small mobile devices */
-@media screen and (max-width: 480px) {
-    .heading-2-parent {
-        padding: 15px;
-    }
-
-    .who-we-are-container {
-        font-size: 24px;
-    }
-
-    .today-in-the-container {
-        font-size: 14px;
-        line-height: 1.5;
     }
 }
 /* Mobile-only Footer with Position Fixed */
@@ -2219,7 +2143,6 @@ body {
     .mobile-input-group img:first-child {
         width: 20px;
         height: 18px;
-        margin-right: 12px;
     }
 
     .mobile-input-group input {
@@ -2277,6 +2200,11 @@ body {
     .mobile-contact-text a {
         margin: 0;
     }
+}
+
+
+.mobile-footer {
+    /* ...existing code... */
 
     .horizontal-divider {
         width: 40px;
@@ -2316,7 +2244,6 @@ body {
         color: #fff;
     }
 }
-
 /* Mobile Footer Typography Updates */
 .mobile-footer {
     font-family: Manrope, sans-serif;
@@ -2411,12 +2338,12 @@ body {
 
     .img-2png-icon {
         position: relative;
-        
+        top: 200;
         left: 0;
         width: 100%;
         max-width: 350px;
         height: auto;
-        margin-bottom: 100px !important;
+        margin-bottom: 30px !important;
         order: -1; /* This moves the image above the content */
     }
 
@@ -2450,6 +2377,111 @@ body {
 
     .img-2png-icon {
         max-width: 280px;
+    }
+}
+/* Update the positioning for the Who We Are section */
+.heading-2-parent {
+    position: relative;
+    width: 100%;
+    max-width: 1244px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    text-align: center;
+    font-size: 40px;
+    color: #141d38;
+    margin-top: 40px; /* Adjust this value to move the section up */
+    z-index: 2; /* Ensure it appears above the image */
+}
+
+/* Adjust the image positioning */
+.multiracial-business-team-havi-icon {
+    position: relative;
+    width: 100%;
+    max-width: 1260px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    z-index: 1;
+}
+
+/* Mobile responsive adjustments */
+@media screen and (max-width: 768px) {
+    .heading-2-parent {
+        position: relative;
+        margin-top: -300px;
+        padding: 20px;
+        z-index: 3;
+    }
+
+
+    .background5 {
+        position: relative;
+        margin-top: -1000px; /* Add space between sections */
+        padding: 40px 20px;
+        height: auto;
+        z-index: 2;
+    }
+    .today-in-the-container {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heading-2-parent {
+        margin-top: -200px; /* Further adjust for smaller screens */
+    }
+
+    .who-we-are-container {
+        font-size: 24px;
+    }
+
+    .today-in-the-container {
+        font-size: 14px;
+    }
+}
+
+/* Update Section height for mobile */
+@media screen and (max-width: 768px) {
+    .section {
+        width: 100%;
+        height: 100px; /* Increase height for mobile */
+        margin-top: 550px;
+        padding: 50;
+        overflow: visible;
+    }
+
+    .slider-container {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 40px;
+        margin-top: 50px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .see-our-skilled-container {
+        position: relative;
+        width: 100%;
+        text-align: center;
+       
+    }
+}
+
+/* Further adjustments for smaller screens */
+@media screen and (max-width: 480px) {
+    .section {
+        height: 600px; /* Even more height for smaller screens */
     }
 }
 
