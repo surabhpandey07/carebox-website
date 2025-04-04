@@ -175,21 +175,27 @@ body {
     padding: 8px 24px;
     box-sizing: border-box;
 }
+
+
 .through-technology {
-    color: #ffffff;
-}
-.enhancing-healthcare-through-container1 {
+    color: #0a50b2;
+    }
+    .enhancing-healthcare-through-container1 {
     width: 100%;
-}
+    }
 .enhancing-healthcare-through-container {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+    width: 573.7px;
+    position: relative;
     font-size: 48px;
-    line-height: 1.2;
-    color: #141d38;
+    line-height: 57.6px;
+    display: flex;
+    font-family: Manrope;
     text-align: center;
-}
+    align-items: center;
+    height: 116.6px;
+    color: #141d38;
+    }
+    
 .overlay-parent {
     display: flex;
     flex-direction: column;
@@ -216,12 +222,14 @@ body {
 }
 .multiracial-business-team-havi-icon {
     position: relative;
+    border-radius: 20px;
     width: 100%;
     max-width: 1260px;
     height: auto;
     margin: 0 auto;
     display: block;
     z-index: 1;
+    top: 50px;
 }
 .particle-3png-icon {
     position: absolute;
@@ -887,6 +895,23 @@ body {
     font-size: 40px;
     color: #141d38;
 }
+@media screen and (max-width: 768px) {
+    .section-parent {
+        padding: 30px 0;
+        font-size: 28px;
+        height: 1700px;
+        margin-top: 0px;
+    }
+
+
+}
+@media screen and (max-width: 480px) {
+    .section-parent {
+        padding: 20px 0;
+        font-size: 24px;
+    }
+}
+
 .section1 {
     position: absolute;
     top: 3443px;
@@ -1103,7 +1128,7 @@ body {
     .multiracial-business-team-havi-icon {
         width: 100%;
         height: auto;
-        margin-top: 1000px;
+       
         object-fit: cover;
     }
 }
@@ -1282,8 +1307,9 @@ body {
 .heading-2-parent {
     position: relative;
     width: 100%;
+    top: 250px;
     max-width: 1244px;
-    margin: 0 auto;
+    margin: -150px auto 0;
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
@@ -1292,8 +1318,10 @@ body {
     text-align: center;
     font-size: 40px;
     color: #141d38;
-    margin-top: -500px; /* Adjust this value to move the section up */
-    z-index: 3; /* Ensure it appears above the image */
+    z-index: 3;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 .infai-website-with-background {
     width: 100%;
@@ -1859,7 +1887,7 @@ body {
 
     .img-2png-icon {
         position: relative;
-        top: 1200px;
+       
         width: 100%;
         
         height: auto;
@@ -1928,6 +1956,7 @@ body {
     width: 100%;
     background-color: #0a50b2;
     margin-top: 40px;
+  
 }
 
 .mobile-footer-content {
@@ -2058,12 +2087,14 @@ body {
         height: auto;
         margin: 0;
         padding: 0;
+        top: -100px;
+        border-radius: 20px;
     }
 
     /* Who We Are section spacing fix */
     .heading-2-parent {
         position: relative;
-        margin-top: -10px;
+       
         width: 100%;
         margin: 0;
       
@@ -2338,7 +2369,7 @@ body {
 
     .img-2png-icon {
         position: relative;
-        top: 200;
+        
         left: 0;
         width: 100%;
         max-width: 350px;
@@ -2384,7 +2415,7 @@ body {
     position: relative;
     width: 100%;
     max-width: 1244px;
-    margin: 0 auto;
+    margin: -150px auto 0;
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
@@ -2393,8 +2424,10 @@ body {
     text-align: center;
     font-size: 40px;
     color: #141d38;
-    margin-top: 40px; /* Adjust this value to move the section up */
-    z-index: 2; /* Ensure it appears above the image */
+    z-index: 3;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Adjust the image positioning */
@@ -2412,11 +2445,25 @@ body {
 @media screen and (max-width: 768px) {
     .heading-2-parent {
         position: relative;
-        margin-top: -300px;
-        padding: 20px;
-        z-index: 3;
+        margin-top: -100px;
+        padding: 25px 15px;
+        font-size: 28px;
+        gap: 20px;
     }
 
+    .who-we-are-container {
+        width: 100%;
+        font-size: 24px;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    .today-in-the-container {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: center;
+    }
 
     .background5 {
         position: relative;
@@ -2425,23 +2472,33 @@ body {
         height: auto;
         z-index: 2;
     }
-    .today-in-the-container {
-        font-size: 16px;
-        line-height: 1.6;
-    }
 }
 
 @media screen and (max-width: 480px) {
     .heading-2-parent {
-        margin-top: -200px; /* Further adjust for smaller screens */
+        margin-top: -80px;
+        padding: 20px 15px;
+        font-size: 24px;
+        gap: 15px;
     }
 
     .who-we-are-container {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .today-in-the-container {
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .heading-2-parent {
+        margin-top: -60px;
+        padding: 15px 10px;
+    }
+
+    .who-we-are-container {
+        font-size: 20px;
     }
 }
 
@@ -2485,3 +2542,35 @@ body {
     }
 }
 
+/* Update overall body height for mobile */
+@media screen and (max-width: 768px) {
+    .infai-website-with-background {
+        height: 2000px; /* Decreased from 3600px */
+        overflow-x: hidden;
+    }
+
+    .section-parent {
+        padding: 30px 0;
+        font-size: 28px;
+        height: auto;
+        margin-top: 0px;
+    }
+
+    .section {
+        width: 100%;
+        height: auto;
+        margin-top: 250px;
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .infai-website-with-background {
+        height: 3000px; /* Further decreased for smaller screens */
+    }
+
+    .section-parent {
+        padding: 20px 0;
+        font-size: 24px;
+    }
+}
