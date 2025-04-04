@@ -1629,17 +1629,25 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    align-items: center; /* Center items horizontally */
+    text-align: center;
 }
 
 .mobile-nav-item {
+    width: 100%;
     text-decoration: none;
     color: #202122;
     font-size: 18px;
     font-weight: 500;
-    padding: 15px;
+    padding: 15px 0;
     border-bottom: 1px solid #eee;
     transition: color 0.3s ease;
+    text-align: center; /* Center text within each item */
+    display: flex;
+    justify-content: center; /* Center flex items */
+    align-items: center;
 }
+
 
 .mobile-nav-item:hover {
     color: #5ce192;
