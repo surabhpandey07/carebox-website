@@ -1934,7 +1934,6 @@ content-wrapper {
         overflow: hidden;
     }
 }
-/* Small Mobile Devices */
 @media screen and (max-width: 480px) {
     .your-partner-in {
         font-size: 24px;
@@ -1942,6 +1941,175 @@ content-wrapper {
 
     .mobile-nav-item {
         font-size: 15px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .faq-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 0 15px;
+    }
+
+    .faq-item {
+        background: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 8px 30px rgba(1, 73, 174, 0.08);
+        border: 1px solid rgba(1, 73, 174, 0.06);
+        overflow: hidden;
+        transform: translateY(0);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        margin-bottom: 12px;
+    }
+
+    .faq-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 40px rgba(1, 73, 174, 0.12);
+    }
+
+    .faq-question {
+        padding: 18px 20px;
+        position: relative;
+        background: linear-gradient(145deg, #ffffff, #f8fafc);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .faq-question h3 {
+        font-size: 15px;
+        font-weight: 600;
+        color: #130d33;
+        padding-right: 40px;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    .faq-toggle {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+        background: rgba(1, 73, 174, 0.06);
+        border-radius: 50%;
+        transition: all 0.3s ease;
+    }
+
+    .faq-toggle::before,
+    .faq-toggle::after {
+        content: '';
+        position: absolute;
+        background: #0149ae;
+        border-radius: 2px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .faq-toggle::before {
+        width: 12px;
+        height: 2px;
+        left: 6px;
+        top: 11px;
+    }
+
+    .faq-toggle::after {
+        width: 2px;
+        height: 12px;
+        left: 11px;
+        top: 6px;
+    }
+
+    /* Active States */
+    .faq-item.active {
+        box-shadow: 0 12px 40px rgba(1, 73, 174, 0.12);
+    }
+
+    .faq-item.active .faq-question {
+        background: linear-gradient(135deg, #0149ae, #0043a0);
+        border-radius: 16px 16px 0 0;
+    }
+
+    .faq-item.active .faq-question h3 {
+        color: #ffffff;
+    }
+
+    .faq-item.active .faq-toggle {
+        background: rgba(255, 255, 255, 0.1);
+        transform: translateY(-50%) rotate(180deg);
+    }
+
+    .faq-item.active .faq-toggle::before,
+    .faq-item.active .faq-toggle::after {
+        background: #ffffff;
+    }
+
+    .faq-item.active .faq-toggle::after {
+        opacity: 0;
+    }
+
+    .faq-answer {
+        background: #ffffff;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .faq-answer-content {
+        padding: 20px;
+        color: #646464;
+        font-size: 14px;
+        line-height: 1.6;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+    }
+
+    .faq-item.active .faq-answer {
+        max-height: 1000px;
+        opacity: 1;
+    }
+
+    .faq-item.active .faq-answer-content {
+        transform: translateY(0);
+    }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+    .faq-container {
+        padding: 0 12px;
+        gap: 12px;
+    }
+
+    .faq-question {
+        padding: 16px;
+    }
+
+    .faq-question h3 {
+        font-size: 14px;
+    }
+
+    .faq-toggle {
+        width: 20px;
+        height: 20px;
+        right: 16px;
+    }
+
+    .faq-toggle::before {
+        width: 10px;
+        left: 5px;
+        top: 9px;
+    }
+
+    .faq-toggle::after {
+        height: 10px;
+        left: 9px;
+        top: 5px;
+    }
+
+    .faq-answer-content {
+        padding: 16px;
+        font-size: 13px;
     }
 }
 /* Mobile-only Footer with Position Fixed */
@@ -2484,6 +2652,9 @@ content-wrapper {
         padding: 16px;
         font-size: 13px;
     }
+
+
+    
 }
 
 .mobile-image-section {
