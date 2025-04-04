@@ -2485,3 +2485,42 @@ content-wrapper {
         font-size: 13px;
     }
 }
+
+.mobile-image-section {
+    display: none; /* Hidden by default on desktop */
+    width: 100%;
+    padding: 20px 15px;
+    margin: 0 auto;
+}
+
+.mobile-image-section img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .mobile-image-section {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    /* Hide desktop version of the image */
+    .vector-parent {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mobile-image-section {
+        padding: 10px 10px;
+    }
+
+    .mobile-image-section img {
+        max-width: 280px;
+    }
+}
