@@ -2545,7 +2545,7 @@ body {
 /* Update overall body height for mobile */
 @media screen and (max-width: 768px) {
     .infai-website-with-background {
-        height: 2000px; /* Decreased from 3600px */
+        height: 3200px; /* Decreased from 3600px */
         overflow-x: hidden;
     }
 
