@@ -4080,7 +4080,7 @@ body {
 @media screen and (max-width: 768px) {
     /* Fix overall container height */
     .infai-website-with-background {
-        height: 4300px !important;
+        height: 4250px !important;
         min-height: 100vh;
         overflow-x: hidden;
         position: relative;
