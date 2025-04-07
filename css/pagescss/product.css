@@ -2215,3 +2215,11 @@ body {
     }
 }
 
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .infai-website-with-background {
+        min-height: 300vh; /* Increased height for mobile */
+        height: auto;
+        padding-bottom: 60px;
+    }
+}
