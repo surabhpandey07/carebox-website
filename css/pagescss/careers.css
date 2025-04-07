@@ -1716,3 +1716,219 @@ body {
     font-size: 14px;
     color: #cbcfd6;
 }
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* General Layout */
+    .infai-website-with-background {
+        min-height: 300vh;
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+    /* Hero Section */
+    .backgroundoverlay {
+        padding: 60px 20px;
+        height: auto;
+        top: 70px;
+    }
+
+    .join-us-in-container {
+        width: 100%;
+        font-size: 32px;
+        line-height: 1.4;
+        padding: 0 15px;
+        height: auto;
+    }
+
+    .overlay {
+        margin-bottom: 20px;
+    }
+
+    /* Team Section */
+    .multiracial-business-team-havi-icon {
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-top: 40px;
+    }
+
+    /* Form Section */
+    .section {
+        position: relative;
+        width: 100%;
+        left: 0;
+        padding: 30px 20px;
+        margin-top: 40px;
+    }
+
+    .frame-parent {
+        width: 100%;
+        padding: 0;
+    }
+
+    .name-parent {
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .frame-div {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Upload Section */
+    .profile {
+        padding: 15px;
+    }
+
+    .group {
+        width: 100%;
+    }
+
+    .text-links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Submit Button */
+    .submit {
+        width: 100%;
+        font-size: 18px;
+        height: 50px;
+    }
+
+    /* Additional Content */
+    .join-our-team-container {
+        position: relative;
+        left: 0;
+        text-align: center;
+        font-size: 28px;
+        margin: 30px 0;
+    }
+
+    /* Form Inputs */
+    .form-input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .add-image-sec {
+        margin-top: 20px;
+        padding: 15px;
+        border: 1px solid rgba(10, 80, 178, 0.1);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .add-image-sec .profile {
+        padding: 20px 15px;
+        border-radius: 8px;
+    }
+
+    .add-image-sec .group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .add-image-sec .frame-icon4 {
+        width: 40px;
+        height: 40px;
+    }
+
+    .add-image-sec .text-links {
+        text-align: center;
+    }
+
+    .add-image-sec .click-to-upload {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .add-image-sec .or-drag-and {
+        font-size: 14px;
+        color: #666;
+    }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+    .join-us-in-container {
+        font-size: 28px;
+    }
+
+    .heading-3 {
+        font-size: 24px;
+    }
+
+    .submit {
+        font-size: 16px;
+        height: 45px;
+    }
+
+    .profile {
+        padding: 12px;
+    }
+
+    .frame-icon4 {
+        width: 36px;
+    }
+
+    .click-to-upload,
+    .or-drag-and {
+        font-size: 14px;
+    }
+}
+
+/* Form Enhancement for Mobile */
+@media screen and (max-width: 768px) {
+    .input {
+        background: #fff;
+        border: 1px solid #edf3f5;
+        border-radius: 8px;
+        padding: 12px 15px;
+        margin-bottom: 15px;
+        transition: all 0.3s ease;
+    }
+
+    .input:focus-within {
+        border-color: #0a50b2;
+        box-shadow: 0 0 0 2px rgba(10, 80, 178, 0.1);
+    }
+
+    .frame-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* File Upload Enhancement */
+    .profile {
+        background: linear-gradient(to bottom, #fff, #f8f9ff);
+        border: 2px dashed #0a50b2;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+    }
+
+    .profile:hover {
+        background: #f8f9ff;
+        border-color: #0048ae;
+    }
+
+    /* Submit Button Enhancement */
+    .submit {
+        background: linear-gradient(135deg, #0a50b2, #0048ae);
+        border-radius: 25px;
+        border: none;
+        transition: all 0.3s ease;
+    }
+
+    .submit:active {
+        transform: scale(0.98);
+    }
+}

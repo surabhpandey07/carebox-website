@@ -404,7 +404,7 @@ body {
     
     .discover-the-difference-container {
         width: 100%;
-        top: 30px;
+        top: 50px;
         position: relative;
         font-size: 20px;
         font-family: Manrope;
@@ -415,7 +415,7 @@ body {
         justify-content: center; /* Add this */
         height: 22px;
         margin: 0 auto; /* Add this */
-        max-width: 1200px; /* Add this */
+        max-width: 100%; /* Add this */
     }
 
 /* Mobile Responsive */
@@ -424,7 +424,7 @@ body {
         
         width: 100%;
         max-width: 350px;
-        font-size: 15px;
+        font-size: 12px;
         line-height: 26px;
         padding: 0 15px;
         margin: 0 auto;
@@ -462,7 +462,7 @@ body {
 }
 
 
-
+/* Base frame styles */
 .frame {
     width: 211px;
     top: 40px;
@@ -483,6 +483,99 @@ body {
     cursor: pointer;
     position: relative;
     overflow: hidden;
+}
+
+/* Hover and active states */
+.frame:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(92, 225, 146, 0.4);
+    background-color: #4bd180;
+}
+
+.frame:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(92, 225, 146, 0.3);
+}
+
+/* Shine effect */
+.frame::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.frame:hover::before {
+    left: 100%;
+    animation: btn-shine 0.5s;
+}
+
+@keyframes btn-shine {
+    100% {
+        left: 100%;
+    }
+}
+
+/* Tablet Devices */
+@media screen and (max-width: 1024px) {
+    .frame {
+        width: 190px;
+        height: 48px;
+        font-size: 15px;
+        top: 45px;
+    }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 768px) {
+    .frame {
+        width: 180px;
+        height: 45px;
+        font-size: 15px;
+        top: 0px;
+        margin: 0 auto;
+    }
+
+    /* Center text on mobile */
+    .frame span {
+        text-align: center;
+    }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+    .frame {
+        width: 160px;
+        height: 40px;
+        font-size: 14px;
+        top: 25px;
+        padding: 0 15px;
+    }
+
+    /* Reduce shadow size on small devices */
+    .frame:hover {
+        box-shadow: 0 4px 15px rgba(92, 225, 146, 0.35);
+    }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 320px) {
+    .frame {
+        width: 140px;
+        height: 38px;
+        font-size: 13px;
+        gap: 4px;
+    }
 }
 
 
@@ -521,6 +614,8 @@ body {
         width: 180px;
         height: 45px;
         font-size: 15px;
+        top: 54px;
+        
     }
 }
 
@@ -2514,7 +2609,7 @@ body {
     }
   
     .your-partner-in {
-      font-size: 24px;
+      font-size: 18px;
       line-height: 1.3;
     }
   
@@ -2712,7 +2807,7 @@ body {
 /* Small Mobile Devices */
 @media screen and (max-width: 480px) {
     .your-partner-in {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .mobile-nav-item {
@@ -3001,7 +3096,7 @@ body {
 @media screen and (max-width: 768px) {
     .infai-website-with-background {
         min-height: 100vh;
-        height: 15000;
+        height: 15900;
         padding-bottom: 60px;
         display: flex;
         flex-direction: column;
@@ -3156,7 +3251,7 @@ body {
 /* Small Mobile Devices */
 @media screen and (max-width: 480px) {
     .frame-parent3 {
-        top: 350px;
+        top: 380px;
         padding: 15px;
     }
 
@@ -3203,13 +3298,14 @@ body {
 
     /* Adjust headings */
     .unique-features {
-        top: -30px;
-        font-size: 28px;
+        top: -80px;
+        font-size: 24px;
         text-align: center;
     }
 
     .dive-into-our-container {
         font-size: 15px;
+        top: -100px;
         text-align: center;
         margin-bottom: 30px;
     }
@@ -3250,6 +3346,7 @@ body {
 
     .frame-parent4 {
         margin-bottom: 50px;
+        top: -140px;
     }
 
     /* Hide desktop sections */
@@ -3983,7 +4080,7 @@ body {
 @media screen and (max-width: 768px) {
     /* Fix overall container height */
     .infai-website-with-background {
-        height: 4700px !important;
+        height: 4300px !important;
         min-height: 100vh;
         overflow-x: hidden;
         position: relative;
@@ -4003,7 +4100,7 @@ body {
     /* Position the mobile mission vision box */
     .mobile-mission-vision {
         position: relative;
-        top: 70px;
+        top: -400px;
         margin-bottom: 30px;
     }
     
@@ -4017,7 +4114,7 @@ body {
     /* Remove excessive spacing */
     .section1 {
         height: 400px;
-        top: -100px;
+        top: 70px;
         margin-top: 30px;
     }
     
@@ -4075,7 +4172,7 @@ body {
     }
     
     .why-carebox-slider-section {
-        top: -55px !important;
+        top: -1105px !important;
     }
     
     /* Tighten spacing on small screens */
