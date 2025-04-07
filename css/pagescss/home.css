@@ -36,6 +36,7 @@ body {
 }
 .home {
     position: absolute;
+
     top: 163px;
     left: 591px;
     line-height: 40px;
@@ -460,9 +461,11 @@ body {
     }
 }
 
+
+
 .frame {
     width: 211px;
-    top: 90px;
+    top: 40px;
     border-radius: 100px;
     background-color: #5ce192;
     height: 50px;
