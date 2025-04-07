@@ -1437,6 +1437,7 @@ body {
 @media screen and (max-width: 768px) {
     .frame-parent4 {
         position: relative;
+       
         width: 100%;
         padding: 20px;
         top: 350px; /* Adjusted from 800px */
@@ -1910,13 +1911,15 @@ body {
         margin: 20px auto;
     }
 
-    .image-icon1 {
+    .image-icon1
+    .image-icon {
         width: 100%;
-        top: 250px;
         max-width: 250px;
+        top: 150px;
         height: auto;
         position: relative;
-        left: -150px;
+        right: 0;
+        left: 0;
         margin: 20px auto;
     }
 
@@ -2219,7 +2222,7 @@ body {
 @media screen and (max-width: 768px) {
     .infai-website-with-background {
         min-height: 300vh; /* Increased height for mobile */
-        height: auto;
+        height: 3350px;
         padding-bottom: 60px;
     }
 }
