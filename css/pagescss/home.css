@@ -3284,7 +3284,7 @@ body {
         width: 100%;
         padding: 0 20px;
         margin: 30px auto;
-        top: -70px;
+        top: -140px;
         animation: float 7s ease-in-out infinite;
         z-index: 5;
     }
@@ -3861,6 +3861,7 @@ body {
     gap: 1.5rem;
     padding: 1.5rem;
     margin-top: 2rem;
+    bottom: 180px;
 }
 
 .mobile-mission-box,
@@ -3989,7 +3990,7 @@ body {
 @media screen and (max-width: 768px) {
     /* Fix overall container height */
     .infai-website-with-background {
-        height: 4500px !important;
+        height: 4700px !important;
         min-height: 100vh;
         overflow-x: hidden;
         position: relative;
