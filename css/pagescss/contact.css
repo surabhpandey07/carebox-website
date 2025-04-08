@@ -487,7 +487,7 @@
     .frame-parent {
     position: absolute;
     top: 0px;
-    left: -400px;
+    left: -550px;
     width: 544px;
     max-width: 1440px;
     margin: 0 auto;
@@ -575,12 +575,13 @@
     .infai-website-with-background-inner {
     position: absolute;
     top: 487.31px;
-    left: 699px;
-    width: 544px;
+    left: 999px;
+    width: 3544px;
     height: 637.9px;
     font-size: 20px;
     color: #130d33;
     }
+    
     .faq {
     }
     .heading-3 {
@@ -1162,6 +1163,9 @@
     font-size: 20px;
     color: #fff;
     }
+    .vector-parent {
+        display: none !important;
+    }
     .frame-parent1 {
     position: absolute;
     top: 137px;
@@ -1175,7 +1179,8 @@
     .background2 {
     position: absolute;
     width: 100%;
-    top: 0px;
+    top: -0px;
+    
     right: 0px;
     left: 0px;
     background-color: #0a50b2;
@@ -1207,7 +1212,7 @@
     bottom: 0px;
     top: 2900px;
     width: 100%;
-    height: 599px;
+    height: 555px;
     overflow: hidden;
     background-image: url('Footer.png');
     background-size: cover;
