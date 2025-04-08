@@ -72,55 +72,85 @@ document.addEventListener('DOMContentLoaded', function() {
     const teamSlides = document.querySelectorAll('.section1 .slide');
     const teamPrevBtn = document.querySelector('.section1 .prev');
     const teamNextBtn = document.querySelector('.section1 .next');
+    const teamDots = document.querySelectorAll('.section1 .dot');
+
     if (teamSlider && teamSlides.length > 0 && teamPrevBtn && teamNextBtn) {
-    let teamCurrentIndex = 0;
-    let teamSlidesToShow = getTeamSlidesToShow();
-    function getTeamSlidesToShow() {
-    if (window.innerWidth <= 768) {
-    return 1;
-    } else if (window.innerWidth <= 1024) {
-    return 2;
-    } else {
-    return 3;
-    }
-    }
-    function updateTeamSlider() {
-    const slideWidth = teamSlides[0].offsetWidth;
-    teamSlider.style.transform = `translateX(-${teamCurrentIndex * slideWidth}px)`;
-    }
-    teamPrevBtn.addEventListener('click', function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    console.log("Team prev button clicked");
-    if (teamCurrentIndex > 0) {
-    teamCurrentIndex--;
-    } else {
-    teamCurrentIndex = teamSlides.length - teamSlidesToShow;
-    }
-    updateTeamSlider();
-    });
-    teamNextBtn.addEventListener('click', function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    console.log("Team next button clicked");
-    const maxIndex = teamSlides.length - teamSlidesToShow;
-    if (teamCurrentIndex < maxIndex) {
-    teamCurrentIndex++;
-    } else {
-    teamCurrentIndex = 0;
-    }
-    updateTeamSlider();
-    });
-    window.addEventListener('resize', function() {
-    const newSlidesToShow = getTeamSlidesToShow();
-    if (newSlidesToShow !== teamSlidesToShow) {
-    teamSlidesToShow = newSlidesToShow;
-    teamCurrentIndex = Math.min(teamCurrentIndex, teamSlides.length - teamSlidesToShow);
-    updateTeamSlider();
-    }
-    });
-    // Initialize team slider
-    updateTeamSlider();
+        let teamCurrentIndex = 0;
+        let teamSlidesToShow = getTeamSlidesToShow();
+
+        function getTeamSlidesToShow() {
+            if (window.innerWidth <= 768) {
+                return 1;
+            } else if (window.innerWidth <= 1024) {
+                return 2;
+            } else {
+                return 3;
+            }
+        }
+
+        function updateTeamSlider() {
+            if (!teamSlider) return;
+            const slideWidth = teamSlides[0].offsetWidth;
+            teamSlider.style.transition = 'transform 0.5s ease-in-out';
+            teamSlider.style.transform = `translateX(-${teamCurrentIndex * slideWidth}px)`;
+
+            // Update active dot
+            if (teamDots && teamDots.length > 0) {
+                teamDots.forEach((dot, index) => {
+                    dot.classList.toggle('active', Math.floor(teamCurrentIndex / teamSlidesToShow) === index);
+                });
+            }
+        }
+
+        teamPrevBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (teamCurrentIndex > 0) {
+                teamCurrentIndex--;
+            } else {
+                teamCurrentIndex = teamSlides.length - teamSlidesToShow;
+            }
+            updateTeamSlider();
+        });
+
+        teamNextBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            const maxIndex = teamSlides.length - teamSlidesToShow;
+            if (teamCurrentIndex < maxIndex) {
+                teamCurrentIndex++;
+            } else {
+                teamCurrentIndex = 0;
+            }
+            updateTeamSlider();
+        });
+
+        // Dot navigation
+        if (teamDots && teamDots.length > 0) {
+            teamDots.forEach((dot, index) => {
+                dot.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    teamCurrentIndex = index * teamSlidesToShow;
+                    if (teamCurrentIndex > teamSlides.length - teamSlidesToShow) {
+                        teamCurrentIndex = teamSlides.length - teamSlidesToShow;
+                    }
+                    updateTeamSlider();
+                });
+            });
+        }
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            const newSlidesToShow = getTeamSlidesToShow();
+            if (newSlidesToShow !== teamSlidesToShow) {
+                teamSlidesToShow = newSlidesToShow;
+                teamCurrentIndex = Math.min(teamCurrentIndex, teamSlides.length - teamSlidesToShow);
+                updateTeamSlider();
+            }
+        });
+
+        // Initialize slider
+        updateTeamSlider();
     }
     // --- WHY CARE BOX SLIDER ---
     const careboxSlider = document.querySelector('.why-carebox-slider-section .slider');
