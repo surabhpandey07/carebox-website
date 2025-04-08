@@ -1,3 +1,52 @@
+/* Global Font Settings */
+html, body {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Make sure all text elements use Manrope */
+h1, h2, h3, h4, h5, h6, p, a, span, div, button, input, textarea, label {
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Specific elements that might have different fonts */
+.navbar,
+.overlay,
+.heading-6,
+.transforming-healthcare-with-container,
+.appointment-scheduling,
+.heading-33,
+.heading-34,
+.heading-35,
+.book-your-slots-container,
+.nav-button,
+.footer,
+.mobile-footer,
+.home-parent,
+.product-solutions,
+.contact-us,
+.frame-parent,
+.group-parent,
+.backgroundshadow-inner,
+.backgroundshadow-child,
+.patients-registers-with-container,
+.seamlessly-organizes-patient,
+.mobile-nav-items,
+.mobile-nav-item,
+.mobile-footer-section,
+.mobile-footer-bottom {
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Add font import if not already in your HTML */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -2224,5 +2273,187 @@ body {
         min-height: 300vh; /* Increased height for mobile */
         height: 3350px;
         padding-bottom: 60px;
+    }
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    .home-parent {
+        display: none;
+    }
+    
+    
+    /* Main Content */
+    .infai-website-with-background {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    .backgroundoverlay {
+        padding: 40px 20px;
+        height: auto;
+    }
+    
+    .overlay-parent {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .overlay {
+        margin-bottom: 15px;
+    }
+    
+    .heading-6 {
+        font-size: 16px;
+    }
+    
+    .transforming-healthcare-with-container {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+    
+    /* Product Features */
+    .frame-parent4 {
+        padding: 20px;
+        margin-top: 30px;
+    }
+    
+    .opd-queue {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+    
+    .designed-to-streamline {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    .group-container {
+        flex-direction: column;
+    }
+    
+    .process-line-1svg-parent {
+        width: 100%;
+    }
+    
+    .process-line-1svg-icon {
+        display: none;
+    }
+    
+    .backgroundshadow,
+    .backgroundshadow1,
+    .backgroundshadow2,
+    .backgroundshadow3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .backgroundshadow-inner,
+    .backgroundshadow-child,
+    .backgroundshadow-inner6 {
+        padding: 15px;
+    }
+    
+    .heading-33,
+    .heading-34,
+    .heading-38,
+    .heading-39 {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    
+    .patients-registers-with-container {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    /* Navigation Buttons */
+    .navigation-buttons {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 30px;
+    }
+    
+    .nav-button {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    /* Images */
+    .image-icon,
+    .image-icon1,
+    .section-elm2png,
+    .appointment-scheduling-icon {
+        width: 100%;
+        height: auto;
+    }
+    
+    .appointment-scheduling-group {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    /* Footer */
+    .footer {
+        height: auto;
+        position: relative;
+        display: none;
+    }
+    
+    .mobile-footer {
+        display: block;
+        padding: 40px 20px 20px;
+        background-color: #0a50b2;
+    }
+    
+    .mobile-footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .mobile-footer-section {
+        width: 100%;
+    }
+    
+    .mobile-footer-logo {
+        width: 150px;
+        margin-bottom: 15px;
+    }
+    
+    .mobile-newsletter {
+        margin-top: 20px;
+    }
+    
+    .mobile-input-group {
+        display: flex;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        padding: 10px;
+    }
+    
+    .mobile-input-group input {
+        flex: 1;
+        background: transparent;
+        border: none;
+        color: #fff;
+        padding: 0 10px;
+    }
+    
+    .mobile-input-group button {
+        width: 42px;
+        height: 42px;
+        border: none;
+        background: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    .mobile-input-group button img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
     }
 }
