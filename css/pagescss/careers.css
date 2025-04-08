@@ -2018,7 +2018,7 @@ body {
     background: linear-gradient(135deg, #0a50b2, #0048ae);
     border-radius: 29px;
     border: none;
-    color: #fff;
+    color: #ffffff;
     font-family: Manrope;
     font-size: 20px;
     font-weight: 700;
@@ -2057,7 +2057,7 @@ body {
     }
 
     .submit {
-        height: 50px;
+        height: 150px;
         font-size: 18px;
         margin-top: 20px;
     }
