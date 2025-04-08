@@ -7,6 +7,7 @@ body {
     min-height: 100vh;
     width: 100%;
     overflow-x: hidden;
+    padding-top: 90px;
 }
 .symbol {
     position: absolute;
@@ -134,14 +135,18 @@ body {
     font-family: Manrope;
 }
 .navbar {
-    position: absolute;
-    top: 0px;
-    left: calc(50% - 720px);
-    background-color: #fff;
-    width: 1440px;
+    position: fixed; /* Change from absolute to fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 90px;
-    font-size: 14px;
-    font-family: Inter;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 .heading-6 {
     position: relative;
@@ -1239,5 +1244,147 @@ body {
     font-family: Manrope;
     font-size: 14px;
     color: #cbcfd6;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .privacy-policy {
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+    /* Header/Banner Section */
+    .backgroundoverlay {
+        position: relative;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .overlay {
+        padding: 6px 18px;
+    }
+
+    .heading-6 {
+        font-size: 18px;
+    }
+
+    .home-privacy-container {
+        width: 100%;
+        font-size: 16px;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    /* Main Content */
+    .data-collection-carebox-container {
+        position: relative;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .data-collection {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    /* Container Adjustments */
+    .container {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    /* Footer Adjustments */
+    .footer {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: 0;
+        bottom: 0;
+    }
+
+    .frame-parent {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+
+    .frame-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .frame-group,
+    .frame-parent1,
+    .frame-parent2 {
+        width: 100%;
+    }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+    .backgroundoverlay {
+        padding: 30px 15px;
+    }
+
+    .data-collection-carebox-container {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .data-collection {
+        font-size: 16px;
+    }
+
+    .frame-parent {
+        padding: 30px 15px;
+    }
+
+    /* Adjust spacing for better readability */
+    .frame-group,
+    .frame-parent1,
+    .frame-parent2 {
+        gap: 20px;
+    }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 360px) {
+    .heading-6 {
+        font-size: 16px;
+    }
+
+    .home-privacy-container {
+        font-size: 14px;
+    }
+
+    .data-collection-carebox-container {
+        font-size: 13px;
+    }
+
+    .frame-parent {
+        padding: 20px 12px;
+    }
+}
+
+/* Fix for fixed navbar */
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
 }
 
