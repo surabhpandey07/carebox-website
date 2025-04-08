@@ -1361,11 +1361,11 @@ body {
     
     .slider-container {
         width: 90%; /* Reduce width for smaller screens */
-        padding-top: px; /* Adjust padding for better layout */
+        padding-top: 10px; /* Adjust padding for better layout */
     }
     
     .prev, .next {
-        padding: 8px; /* Adjust button size */
+        padding: 5px; /* Adjust button size */
     }
 }
 
@@ -4190,80 +4190,5 @@ body {
     .mobile-footer {
         top: 80px;
     }
-}
-/* Slider Navigation Buttons */
-.carousel-button,
-.prev,
-.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.9);
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    z-index: 10;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-}
-
-.prev, .carousel-button.prev {
-    left: 10px;
-}
-
-.next, .carousel-button.next {
-    right: 10px;
-}
-
-.carousel-button:hover,
-.prev:hover,
-.next:hover {
-    background: #0a50b2;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.carousel-button.disabled,
-.prev.disabled,
-.next.disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-/* Slider Containers */
-.why-carebox-slider-section .carousel-track,
-.section1 .slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
-}
-
-.carousel-slide,
-.section1 .slide {
-    flex: 0 0 100%;
-    width: 100%;
-}
-
-/* Dots Navigation */
-.carousel-dots {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 20px;
-}
-
-.carousel-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: rgba(10, 80, 178, 0.3);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.carousel-dot.active {
-    background: #0a50b2;
-    transform: scale(1.2);
 }
 
