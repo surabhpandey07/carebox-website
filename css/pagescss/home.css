@@ -4220,7 +4220,7 @@ body {
 .carousel-button:hover,
 .prev:hover,
 .next:hover {
-    background: #fff;
+    background: #0a50b2;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
