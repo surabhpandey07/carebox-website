@@ -57,17 +57,40 @@ body {
     width: 100%;
     overflow-x: hidden;
 }
-
-.symbol {
-    position: absolute;
-    top: 5px;
-    left: 16px;
-    line-height: 14px;
+.symbol001 {
+    width: 16.4px;
+    top: 10px;
+    left: 10px;
+    position: relative;
+    font-size: 16px;
+    line-height: 39px;
+    font-family: 'Font Awesome 5 Free';
+    color: #fff;
+    text-align: center;
     display: flex;
     align-items: center;
-    width: 14.2px;
-    height: 14px;
+    justify-content: center;
+    height: 16px;
+    
 }
+
+
+.symbol {
+    width: 16.4px;
+    top: 10px;
+    left: 10px;
+    position: relative;
+    font-size: 16px;
+    line-height: 39px;
+    font-family: 'Font Awesome 5 Free';
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+}
+
 .item-link {
     position: absolute;
     top: 0px;
@@ -397,7 +420,7 @@ body {
     height: 1px;
 }
 .useful-links-parent {
-    width: 129px;
+    width: 229px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -424,6 +447,7 @@ body {
 }
 .help-support {
     align-self: stretch;
+
     position: relative;
     letter-spacing: 1px;
     line-height: 20px;
@@ -456,7 +480,7 @@ body {
     gap: 32px;
 }
 .contact-us-parent {
-    width: 116.5px;
+    width: 216.5px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -954,17 +978,17 @@ body {
 .image-icon {
     position: absolute;
     top: 685px;
-    left: 206px;
-    width: 250px;
-    height: 300px;
+    left: 400px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
 }
 .image-icon1 {
     position: absolute;
     top: 685px;
-    left: 974px;
-    width: 250px;
-    height: 300px;
+    left: 1400px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
 }
 .section-elm2png {
@@ -982,6 +1006,15 @@ body {
     width: 730px;
     height: 474px;
     object-fit: cover;
+}
+.home-group .faqs a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.home-group .faqs a:hover {
+    color: #55b749;
 }
 .group-child {
     position: absolute;

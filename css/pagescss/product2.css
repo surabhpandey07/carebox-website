@@ -26,6 +26,15 @@ body {
     width: 30px;
     height: 26px;
 }
+.home-group .faqs a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.home-group .faqs a:hover {
+    color: #0a50b2;
+}
 .item-link1 {
     position: absolute;
     top: 0px;

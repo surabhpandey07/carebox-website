@@ -103,6 +103,15 @@
     width: 113px;
     height: 21px;
     }
+    .g{
+        margin: 0;
+        width: 300px;
+        font-size: 15px;
+        color: #cbcfd6;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     .link {
     position: absolute;
     top: 22px;
@@ -484,10 +493,19 @@
     gap: 24px;
     font-size: 25px;
     }
+    .home-group .faqs a {
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .home-group .faqs a:hover {
+        color: #0ab256;
+    }
     .frame-parent {
     position: absolute;
     top: 0px;
-    left: -550px;
+    left: -650px;
     width: 544px;
     max-width: 1440px;
     margin: 0 auto;
@@ -575,7 +593,7 @@
     .infai-website-with-background-inner {
     position: absolute;
     top: 487.31px;
-    left: 999px;
+    left: 1009px;
     width: 3544px;
     height: 637.9px;
     font-size: 20px;
@@ -2330,6 +2348,7 @@
     padding-right: 40px;
     line-height: 1.5;
     transition: color 0.3s ease;
+    text-align: left;
     }
     .faq-toggle {
     position: absolute;
@@ -2891,5 +2910,66 @@
     @media screen and (max-width: 360px) {
     .faq-container {
     width: 90%; /* Maintain percentage width */
+    }
+    }
+    /* Desktop h3 alignment fixes */
+    .card-title {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0 8px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #130d33;
+    }
+    
+    /* FAQ question alignment */
+    .faq-question h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #130d33;
+    padding-right: 40px;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+    }
+    
+    /* Section headings */
+    .heading-3 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    }
+    
+    /* Generic h3 styles for desktop */
+    h3 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    font-weight: 600;
+    }
+    
+    /* Desktop-specific alignments */
+    @media screen and (min-width: 769px) {
+    .card h3 {
+        text-align: center;
+        width: 100%;
+        margin: 15px 0 8px;
+        font-size: 18px;
+    }
+    
+    .section h3 {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    
+    .faq-question h3 {
+        text-align: left;
+        padding-right: 40px;
+    }
+    
+    .heading-3 h3 {
+        text-align: center;
+        width: 100%;
     }
     }

@@ -240,3 +240,25 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', updateContainerHeight);
     }
     });
+
+    // Add event listeners to info buttons
+document.addEventListener('DOMContentLoaded', function() {
+    const infoButtons = document.querySelectorAll('.info-btn');
+    
+    infoButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.stopPropagation(); // Prevent click from bubbling up
+            const socialLinks = this.querySelector('.social-links');
+            socialLinks.classList.toggle('active');
+        });
+    });
+
+    // Close social links when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.info-btn')) {
+            document.querySelectorAll('.social-links').forEach(box => {
+                box.classList.remove('active');
+            });
+        }
+    });
+});

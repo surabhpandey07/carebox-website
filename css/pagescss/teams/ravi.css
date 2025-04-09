@@ -1,11 +1,8 @@
-/* Base Styles */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Manrope', sans-serif;
 }
-
 body {
     min-height: 100vh;
     width: 100%;
@@ -130,18 +127,14 @@ body {
     font-family: Manrope;
 }
 .navbar {
-    position: fixed; /* Change from absolute to fixed */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 90px;
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 720px);
     background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 40px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    width: 1440px;
+    height: 90px;
+    font-size: 14px;
+    font-family: Inter;
 }
 .heading-6 {
     position: relative;
@@ -257,7 +250,7 @@ body {
     line-height: 27.2px;
     display: flex;
     align-items: center;
-    height: 429px;
+    height: 402px;
     flex-shrink: 0;
 }
 .mr-manish-sheth-brings-over-t-wrapper {
@@ -269,57 +262,15 @@ body {
     z-index: 0;
 }
 .frame-child {
+    width: 287px;
     position: absolute;
+    margin: 0 !important;
+    top: -172px;
+    left: calc(50% - 143px);
     border-radius: 50%;
+    height: 287px;
     object-fit: cover;
-    border: 4px solid #fff;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    z-index: 10;
-    transition: all 0.3s ease;
-}
-@media screen and (min-width: 1025px) {
-    .frame-child {
-        width: 287px;
-        height: 287px;
-        top: -172px;
-        left: calc(50% - 143px);
-    }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .frame-child {
-        width: 240px;
-        height: 240px;
-        top: -120px;
-        left: calc(50% - 120px);
-    }
-}
-@media screen and (max-width: 768px) {
-    .frame-child {
-        width: 180px;
-        height: 180px;
-        top: -90px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
-    .frame-parent {
-        margin-top: 60px;
-        padding-top: 110px;
-        position: relative;
-    }
-}
-@media screen and (max-width: 480px) {
-    .frame-child {
-        width: 150px;
-        height: 150px;
-        top: -75px;
-        border-width: 3px;
-    }
-    
-    .frame-parent {
-        margin-top: 40px;
-        padding-top: 90px;
-    }
+    z-index: 1;
 }
 .heading-3 {
     align-self: stretch;
@@ -342,10 +293,15 @@ body {
     gap: 2px;
 }
 .symbol4 {
-    align-self: stretch;
+    width: 20px;
     position: relative;
-    line-height: 39px;
+    height: 22px;
+    overflow: hidden;
+    flex-shrink: 0;
+    padding-top: 4px;
+    left: -3px;
 }
+
 .backgroundborder3 {
     position: absolute;
     top: 0px;
@@ -353,14 +309,11 @@ body {
     border-radius: 21px;
     background-color: #0e53b3;
     border: 2px solid #2a66b9;
-    box-sizing: border-box;
-    width: 38px;
-    height: 38px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    padding: 10px 11px;
+    justify-content: flex-start;
+    padding: 9px;
 }
 .backgroundborder-wrapper {
     position: absolute;
@@ -421,23 +374,24 @@ body {
     color: #141d38;
 }
 .frame-parent {
-    position: relative;
+    position: absolute;
+    top: 546px;
+    left: calc(50% - 622px);
+    backdrop-filter: blur(19.2px);
     border-radius: 20px;
     background-color: rgba(216, 231, 254, 0.25);
     border: 1px solid rgba(216, 231, 254, 0.1);
     box-sizing: border-box;
-    width: 100%;
-    max-width: 1244px;
-    margin: 0 auto;
-    margin-top: 180px;
+    width: 1244px;
+    height: 711px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    padding: 42px 0;
+    padding: 42px 0px;
     gap: 32px;
-    backdrop-filter: blur(19.2px);
-    -webkit-backdrop-filter: blur(19.2px);
+    text-align: justify;
+    color: #395377;
 }
 .heading-31 {
     position: absolute;
@@ -844,6 +798,21 @@ body {
     font-family: Manrope;
 }
 
+
+.navbar {
+    position: fixed; /* Change from absolute to fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
 /* Update logo styles */
 .logopng-icon {
     width: 126px;
@@ -1479,9 +1448,9 @@ body {
         position: relative;
         top: 20px;
         left: 0;
-        width: calc(100% - 30px);
+        width: 100%;
         height: auto;
-        padding: 100px 15px 30px;
+        padding: 80px 20px 40px;
         margin: 0 15px;
         border-radius: 15px;
     }
@@ -1701,9 +1670,11 @@ body {
     .mr-manish-sheth-container {
         font-size: 14px;
         line-height: 1.6;
+        padding: 20px 15px;
         height: auto;
         text-align: left;
     }
+
     /* Social Links */
     .group-parent {
         justify-content: center;
@@ -1975,396 +1946,6 @@ body {
 @supports (-webkit-touch-callout: none) {
     .frame-parent {
         -webkit-backdrop-filter: blur(19.2px);
-    }
-}
-
-/* Mr. Ravi Pandya Profile Section */
-.mr-ravi-pandya {
-    font-weight: 600;
-    color: #0a50b2;
-}
-
-.is-a {
-    color: #395377;
-}
-
-.mr-ravi-pandya-is-a-pmp-certi {
-    margin: 0;
-    line-height: 1.6;
-}
-
-.mr-ravi-pandya-container {
-    align-self: stretch;
-    position: relative;
-    line-height: 27.2px;
-    display: flex;
-    align-items: center;
-    height: auto;
-    min-height: 429px;
-    flex-shrink: 0;
-}
-
-/* Heading and Title */
-.heading-3 {
-    align-self: stretch;
-    position: relative;
-    line-height: 34.01px;
-    font-size: 24px;
-    color: #141d38;
-    margin-bottom: 5px;
-}
-
-.ceo-planning {
-    align-self: stretch;
-    position: relative;
-    font-size: 16px;
-    font-weight: 500;
-    color: #0a50b2;
-}
-
-/* Social Icons */
-.backgroundborder3, 
-.backgroundborder4 {
-    border-radius: 21px;
-    background-color: #0e53b3;
-    border: 2px solid #2a66b9;
-    width: 38px;
-    height: 38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.frame-icon {
-    width: 20px;
-    height: 20px;
-}
-
-.group-parent {
-    display: flex;
-    gap: 8px;
-    margin-top: 15px;
-}
-
-/* Mobile Responsive Styles */
-@media screen and (max-width: 768px) {
-    body {
-        padding-top: 70px;
-    }
-
-    /* Banner Section */
-    .backgroundoverlay {
-        position: relative;
-        width: 100%;
-        top: 0;
-        left: 0;
-        height: auto;
-        padding: 40px 20px;
-        margin-top: 0;
-    }
-
-    .overlay {
-        padding: 6px 18px;
-        margin-bottom: 15px;
-    }
-
-    .heading-6 {
-        font-size: 20px;
-    }
-
-    .home-team-container {
-        width: 100%;
-        font-size: 16px;
-        height: auto;
-        padding: 10px 0;
-    }
-
-    /* Profile Section */
-    .frame-parent {
-        position: relative;
-        top: 20px;
-        left: 0;
-        width: calc(100% - 30px);
-        height: auto;
-        padding: 100px 15px 30px;
-        margin: 0 15px;
-        border-radius: 15px;
-    }
-
-    /* Name and Title Section */
-    .frame-group {
-        position: relative;
-        top: 550;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        padding: 0 15px;
-    }
-
-    .heading-3 {
-        font-size: 22px;
-        line-height: 1.3;
-        margin-bottom: 5px;
-    }
-
-    .ceo-planning {
-        font-size: 15px;
-        margin-bottom: 15px;
-    }
-
-    /* Bio Text */
-    .mr-ravi-pandya-container {
-        font-size: 14px;
-        line-height: 1.6;
-        height: auto;
-        top: -298PX;
-        text-align: left;
-        padding: 15px 0;
-    }
-
-    /* Social Links */
-    .group-parent {
-        justify-content: center;
-        gap: 12px;
-        margin-top: 20px;
-    }
-
-    .backgroundborder3, 
-    .backgroundborder4 {
-        width: 38px;
-        height: 38px;
-        border-radius: 19px;
-    }
-
-    .frame-icon {
-        width: 18px;
-        height: 18px;
-    }
-
-    /* Navigation */
-    .navbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-    }
-
-    .home-parent {
-        display: none;
-    }
-
-    /* Mobile Menu Button */
-    .mobile-menu-btn {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 25px;
-        height: 20px;
-        position: absolute;
-        top: 25px;
-        right: 20px;
-        cursor: pointer;
-        z-index: 1001;
-    }
-
-    .mobile-menu-btn span {
-        width: 100%;
-        height: 3px;
-        background-color: #0a50b2;
-        border-radius: 3px;
-        transition: all 0.3s ease;
-    }
-
-    /* Mobile Navigation */
-    .mobile-nav {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 80%;
-        height: 100vh;
-        background-color: white;
-        z-index: 1000;
-        transition: right 0.3s ease;
-        padding-top: 80px;
-        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .mobile-nav.active {
-        right: 0;
-    }
-
-    .mobile-nav-items {
-        display: flex;
-        flex-direction: column;
-        padding: 0 30px;
-    }
-
-    .mobile-nav-item {
-        padding: 15px 0;
-        border-bottom: 1px solid #f1f1f1;
-        font-size: 18px;
-        color: #333;
-        text-decoration: none;
-    }
-}
-
-/* Small Mobile Devices */
-@media screen and (max-width: 480px) {
-    .frame-parent {
-        margin: 10px;
-        padding: 80px 10px 20px;
-    }
-
-    .frame-child {
-        width: 150px;
-        height: 150px;
-        top: -75px;
-    }
-
-    .heading-3 {
-        font-size: 20px;
-    }
-
-    .ceo-planning {
-        font-size: 14px;
-    }
-
-    .mr-ravi-pandya-container {
-        font-size: 13px;
-        padding: 10px 0;
-    }
-
-    .backgroundborder3, 
-    .backgroundborder4 {
-        width: 34px;
-        height: 34px;
-    }
-
-    .frame-icon {
-        width: 16px;
-        height: 16px;
-    }
-}
-
-/* Fix for iOS Safari */
-@supports (-webkit-touch-callout: none) {
-    .backgroundoverlay {
-        background-attachment: scroll;
-    }
-
-    .frame-parent {
-        -webkit-backdrop-filter: blur(19.2px);
-    }
-}
-
-/* Mobile Footer */
-.mobile-footer {
-    display: none;
-    position: relative;
-    width: 100%;
-    background-color: #0a50b2;
-    margin-top: 40px;
-}
-
-.mobile-footer-content {
-    padding: 40px 20px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.mobile-footer-section {
-    margin-bottom: 30px;
-}
-
-.mobile-footer-section h3 {
-    font-family: Manrope;
-    font-size: 20px;
-    line-height: 20px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 18px;
-}
-
-.horizontal-divider {
-    width: 40px;
-    height: 1px;
-    background-color: #fff;
-    margin: 15px 0 20px;
-}
-
-.mobile-footer-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.mobile-footer-section ul li {
-    margin-bottom: 12px;
-}
-
-.mobile-footer-section ul li a {
-    font-family: Manrope;
-    font-size: 17px;
-    line-height: 23.8px;
-    text-transform: capitalize;
-    font-weight: 600;
-    color: #cbcfd6;
-    text-decoration: none;
-}
-
-.mobile-contact-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-.mobile-contact-item img {
-    width: 20px;
-    height: 20px;
-    margin-top: 3px;
-}
-
-.mobile-contact-item p,
-.mobile-contact-item a {
-    font-family: Manrope;
-    font-size: 17px;
-    line-height: 21px;
-    font-weight: 600;
-    color: #cbcfd6;
-    text-decoration: none;
-    margin: 0;
-}
-
-.mobile-footer-bottom {
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.mobile-footer-bottom p {
-    font-family: Manrope;
-    font-size: 14px;
-    color: #cbcfd6;
-}
-
-/* Show/Hide Footer Based on Screen Size */
-@media screen and (max-width: 768px) {
-    .footer {
-        display: none;
-    }
-    
-    .mobile-footer {
-        display: block;
-        margin-top: auto;
-    }
-
-    .privacy-policy {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
     }
 }
 
