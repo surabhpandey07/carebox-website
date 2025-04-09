@@ -208,7 +208,7 @@ body {
 }
 .frame-group {
     position: absolute;
-    top: 62px;
+    top: 292px;
     left: 53px;
     width: 45px;
     display: flex;
@@ -1982,6 +1982,9 @@ body {
     height: 35px;
     overflow: hidden;
 }
+
+
+
 .rocket-lunch-6955502-1-icon {
     width: 42px;
     position: relative;
